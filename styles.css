@@ -1,0 +1,84 @@
+/* Reset some default styles for consistency */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background image of a space scene */
+body {
+    background-image: url('space-bg.jpg'); /* Replace with your space background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+.nav-bar {
+    list-style-type: none;
+}
+
+.nav-bar li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+/* Section styles */
+.section {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    margin: 20px;
+}
+
+/* Course cards styles */
+.courses .course-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    text-align: center;
+}
+
+.courses .course-card img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Reviews styles */
+.reviews .review {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    text-align: center;
+}
+
+/* Footer styles */
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}
+
+/* Customize other sections and elements as needed */
