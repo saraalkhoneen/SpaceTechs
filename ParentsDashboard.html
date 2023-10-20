@@ -1,50 +1,63 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title> Parents Dashboard </title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="website icon" type="jpg" href="logo.jpg">
-    </head>
-    <body style =  "background-color: white;">
-        <header>
-
-            <img src="logo.jpg" alt="Logo" width="300" height="150">
-		
- <nav class="nav-bar">
-           <a href= "homepage.html" > Home  </a> 
-            <a href="coursesPage.html" >   Courses </a>
-            <a href="" >  Tutors </a>
-            <a href= "" > Adminstrators </a>
-		    <a href= "ParentsDashboard.html" > Parents Dashboard  </a> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent's Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.jpg" alt="Website Logo">
+            <h1>Space Techs</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">homepage</a></li>
+                <li><a href="ParentsDashboard.html">Parent's Dashboard</a></li>
+                <li><a href="AdministratorsDashboard.html">Administrator's Dashboard</a></li>
+                <li><a href="Courses.html">Courses</a></li>
+                <li><a href="Tutors.html">Tutors</a></li>
+            </ul>
         </nav>
-            
-        </header>
-        <aside>
-            <button type="button" onclick="window.location.href = 'newkid.html';">Register a New Kid</button>
-            <button type="button" onclick="window.location.href = 'courseenrollment.html';">course enrollment</button>
-            <button type="button" onclick="window.location.href = 'Courseevaluation.html';">Course evaluation</button>
-           
-            
-        </aside>
-    <section>
+    </header>
 
-    </section>
-   
+    <main class="parent-dashboard">
+        <section class="dashboard-menu">
+            <h2>Dashboard Menu</h2>
+            <ul>
+                <li><a href="newkid.html">Register a New Child</a></li>
+                <li><a href="courseenrollment.html">Course Enrollment</a></li>
+                <li><a href="Courseevaluation.html">Course Evaluation</a></li>
+            </ul>
+        </section>
 
-    </body>
+        <section class="registered-kids">
+            <h2>Registered Kids</h2>
+            <div class="user-card">
+                <img src="child1.jpg" alt="Child 1">
+                <h3>Child's Name 1</h3>
+                <p>Age: 8 years</p>
+            </div>
 
-    
-    
-    
+            <div class="user-card">
+                <img src="child2.jpg" alt="Child 2">
+                <h3>Child's Name 2</h3>
+                <p>Age: 9 years</p>
+            </div>
+        </section>
+    </main>
+
     <footer>
         <div class="footer-content">
             <p>&copy; 2023 space techs</p>
-            <a href="contact.html" class="contact-link">  <!-- اي معلومات تواصل --> 
+            <a href="contact.html" class="contact-link">
                 <i class="fa fa-envelope"></i> Contact Us
             </a>
         </div>
     </footer>
-    </html>
-
+</body>
+</html>
    
   
