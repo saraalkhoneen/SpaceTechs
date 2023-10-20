@@ -1,84 +1,141 @@
-/* Reset some default styles for consistency */
-body, h1, h2, h3, p, ul, li {
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-/* Set a background image of a space scene */
+/* Set a background color and text color */
 body {
-    background-image: url('space-bg.jpg'); /* Replace with your space background image */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
     color: #333;
 }
 
 /* Header styles */
 header {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+}
+
 .logo img {
-    max-width: 150px;
-    height: auto;
-}
-
-.nav-bar {
-    list-style-type: none;
-}
-
-.nav-bar li {
-    display: inline;
-    margin-right: 20px;
-    font-size: 18px;
-}
-
-/* Section styles */
-.section {
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 10px;
-    margin: 20px;
-}
-
-/* Course cards styles */
-.courses .course-card {
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    margin: 10px;
-    text-align: center;
-}
-
-.courses .course-card img {
     max-width: 100px;
     height: auto;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Main content styles (No changes) */
+
+/* Dashboard Menu styles */
+.dashboard-menu {
+    flex: 1;
+    background-color: #303f4e; /* Side menu background color */
+    padding: 20px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.dashboard-menu h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.dashboard-menu ul {
+    list-style: none;
+}
+
+.dashboard-menu li {
     margin-bottom: 10px;
 }
 
-/* Reviews styles */
-.reviews .review {
-    background-color: #fff;
-    border-radius: 10px;
+.dashboard-menu a {
+    display: block;
     padding: 10px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-    margin: 10px;
+    text-decoration: none;
+    background-color: #424f5d; /* Button background color */
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.dashboard-menu a:hover {
+    background-color: #162636; /* Button background color on hover */
+}
+
+/* Registered Kids styles (No changes) */
+
+/* User Card styles */
+.registered-kids {
+    flex: 2;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.user-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
     text-align: center;
+    margin: 10px;
+    width: 250px;
+}
+
+.user-card img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.user-card h3 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.user-card p {
+    font-size: 16px;
+    color: #666;
+    margin: 10px 0;
 }
 
 /* Footer styles */
 footer {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 10px;
-    text-align: center;
+    background-color: #333;
     color: #fff;
-    font-size: 14px;
+    text-align: center;
+    padding: 10px;
 }
 
-/* Customize other sections and elements as needed */
+.contact-link {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+}
