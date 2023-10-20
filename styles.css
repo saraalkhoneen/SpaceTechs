@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -46,25 +47,25 @@ nav a {
     color: #fff;
 }
 
-/* Main content styles (No changes) */
+
 
 /* Dashboard Menu styles */
 .dashboard-menu {
-    flex: 1;
-    background-color: #303f4e; /* Side menu background color */
+    float: right;
+    width: 25%;
+    background-color: #f2f2f2;
     padding: 20px;
     border-radius: 5px;
-    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .dashboard-menu h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #fff;
+    font-size: 20px;
 }
 
 .dashboard-menu ul {
     list-style: none;
+    padding: 0;
 }
 
 .dashboard-menu li {
@@ -74,19 +75,18 @@ nav a {
 .dashboard-menu a {
     display: block;
     padding: 10px;
-    text-decoration: none;
-    background-color: #424f5d; /* Button background color */
+    background-color: #2a1c4b;
     color: #fff;
+    text-decoration: none;
+    text-align: center;
     border-radius: 5px;
-    font-weight: bold;
     transition: background-color 0.3s;
 }
 
 .dashboard-menu a:hover {
-    background-color: #162636; /* Button background color on hover */
+    background-color: #1d1a3d;
 }
 
-/* Registered Kids styles (No changes) */
 
 /* User Card styles */
 .registered-kids {
@@ -125,6 +125,24 @@ nav a {
     color: #666;
     margin: 10px 0;
 }
+.user-card {
+    border-bottom: 3px solid #5c3c80;
+    padding-bottom: 10px;
+}
+
+.user-card img {
+    max-width: 100%;
+}
+
+.user-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.user-card p {
+    font-size: 16px;
+    margin: 0;
+}
 
 /* Footer styles */
 footer {
@@ -139,6 +157,9 @@ footer {
     text-decoration: none;
     margin-left: 10px;
 }
+
+
+
 /* Styles for Register New Child Page */
 .register-new-child {
     display: flex;
@@ -179,7 +200,7 @@ label, input, select {
 
 button {
     padding: 10px 20px;
-    background-color: #007BFF;
+    background-color: #440aa6;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -192,7 +213,7 @@ button {
 }
 
 #registerButton {
-    background-color: #007BFF;
+    background-color: #440aa6;
 }
 
 
@@ -200,8 +221,8 @@ button {
 
 
 
-/* Styles for Course Enrollment Page */
-/* Styles for Course Enrollment Page */
+/*  Course Enrollment Page */
+
 .course-enrollment {
     text-align: center;
     padding: 20px;
@@ -217,6 +238,7 @@ button {
     padding: 20px;
     border-radius: 5px;
     margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow */
 }
 
 .student-name label, .filter label {
@@ -240,7 +262,7 @@ select {
 }
 
 .filter {
-    flex-basis: calc(50% - 10px); /* Two filters side by side with spacing */
+    flex-basis: calc(50% - 10px);
 }
 
 .courses {
@@ -252,10 +274,78 @@ select {
 
 .course {
     flex-basis: calc(33.33% - 20px);
-    background-color: #fff;
     padding: 20px;
     border-radius: 5px;
     margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Add colored bottom border to each course */
+.course-1::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px; /* Adjust the line thickness */
+    background-color: #471b50; /* Line color for Course 1 */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.course-2::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px; /* Adjust the line thickness */
+    background-color: #3398db; /* Line color for Course 2 */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.course-3::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px; /* Adjust the line thickness */
+    background-color: #ae5dc5; /* Line color for Course 3 */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.course-4::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px; /* Adjust the line thickness */
+    background-color: #334eff; /* Line color for Course 4 */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.course-5::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px; /* Adjust the line thickness */
+    background-color: #9e2189; /* Line color for Course 5 */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.course-6::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px; /* Adjust the line thickness */
+    background-color: #a200ff; /* Line color for Course 6 */
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 .course img {
@@ -264,7 +354,7 @@ select {
 
 button {
     padding: 10px 20px;
-    background-color: #007BFF;
+    background-color: #440aa6;
     color: #fff;
     border: none;
     border-radius: 5px;
