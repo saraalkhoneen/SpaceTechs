@@ -139,3 +139,136 @@ footer {
     text-decoration: none;
     margin-left: 10px;
 }
+/* Styles for Register New Child Page */
+.register-new-child {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.upload-pic, .child-details {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.upload-pic h2, .child-details h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#picUpload {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+label, input, select {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#cancelButton {
+    background-color: #ccc;
+    margin-right: 10px;
+}
+
+#registerButton {
+    background-color: #007BFF;
+}
+
+
+
+
+
+
+/* Styles for Course Enrollment Page */
+/* Styles for Course Enrollment Page */
+.course-enrollment {
+    text-align: center;
+    padding: 20px;
+}
+
+.course-enrollment h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.student-name, .filters {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.student-name label, .filter label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.filter {
+    flex-basis: calc(50% - 10px); /* Two filters side by side with spacing */
+}
+
+.courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.course {
+    flex-basis: calc(33.33% - 20px);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.course img {
+    max-width: 100%;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
