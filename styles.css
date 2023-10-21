@@ -341,7 +341,7 @@ select {
     content: "";
     display: block;
     width: 100%;
-    height: 3px; /* Adjust the line thickness */
+    height: 3px; /*  line thickness */
     background-color: #a200ff; /* Line color for Course 6 */
     position: absolute;
     bottom: 0;
@@ -349,7 +349,8 @@ select {
 }
 
 .course img {
-    max-width: 100%;
+    width: 100%;
+    height: 150px; 
 }
 
 button {
