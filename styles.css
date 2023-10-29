@@ -48,7 +48,7 @@ nav a {
 }
 
 
-
+/***********************************************************/
 /* Dashboard Menu styles */
 .dashboard-menu {
     float: right;
@@ -87,7 +87,7 @@ nav a {
     background-color: #334e70;
 }
 
-
+/***********************************************************/
 /* User Card styles */
 .registered-kids {
     flex: 2;
@@ -164,7 +164,7 @@ footer {
 }
 
 
-
+/***********************************************************/
 /* Styles for Register New Child Page */
 .register-new-child {
     display: flex;
@@ -225,7 +225,7 @@ button {
 
 
 
-
+/***********************************************************/
 /*  Course Enrollment Page */
 
 .course-enrollment {
@@ -366,10 +366,11 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
+
 /* Style for the breadcrumbs */
 .breadcrumbs {
-    text-align: left; /* Align breadcrumbs to the left */
-    margin-top: 10px; /* Adjust the margin as needed */
+    text-align: left; 
+    margin-top: 10px; 
     font-size: 12px;
   }
   
@@ -384,14 +385,14 @@ button {
   }
   .breadcrumbs a {
     text-decoration: none;
-    color: #333; /* Adjust the color as needed */
+    color: #333; 
   }
   
   /* Style for the breadcrumb separator */
   .breadcrumbs li::after {
     content: '>';
-    margin: 0 5px; /* Adjust the margin as needed */
-    color: #333; /* Adjust the color as needed */
+    margin: 0 5px; 
+    color: #333; 
   }
   .courses > div:hover {
     transform: translateY(-5px);
