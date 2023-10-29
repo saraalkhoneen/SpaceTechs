@@ -75,7 +75,7 @@ nav a {
 .dashboard-menu a {
     display: block;
     padding: 10px;
-    background-color: #2a1c4b;
+    background-color: #131c4f;
     color: #fff;
     text-decoration: none;
     text-align: center;
@@ -84,7 +84,7 @@ nav a {
 }
 
 .dashboard-menu a:hover {
-    background-color: #1d1a3d;
+    background-color: #334e70;
 }
 
 
