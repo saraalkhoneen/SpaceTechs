@@ -131,8 +131,10 @@ nav a {
 }
 
 .user-card img {
-    max-width: 100%;
+    max-width: 100px; 
+    height: auto;
 }
+
 
 .user-card h3 {
     font-size: 18px;
