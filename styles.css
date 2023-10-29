@@ -143,6 +143,10 @@ nav a {
     font-size: 16px;
     margin: 0;
 }
+.user-card img {
+    max-width: 100px; /* Adjust the desired width */
+    height: auto;
+}
 
 /* Footer styles */
 footer {
@@ -361,5 +365,31 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
-
+/* Style for the breadcrumbs */
+.breadcrumbs {
+    text-align: left; /* Align breadcrumbs to the left */
+    margin-top: 10px; /* Adjust the margin as needed */
+    font-size: 14px;
+  }
+  
+  .breadcrumbs ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .breadcrumbs li {
+    display: inline;
+  }
+  .breadcrumbs a {
+    text-decoration: none;
+    color: #333; /* Adjust the color as needed */
+  }
+  
+  /* Style for the breadcrumb separator */
+  .breadcrumbs li::after {
+    content: '>';
+    margin: 0 5px; /* Adjust the margin as needed */
+    color: #333; /* Adjust the color as needed */
+  }
 
