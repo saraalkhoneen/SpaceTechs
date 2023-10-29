@@ -396,3 +396,219 @@ button {
   .courses > div:hover {
     transform: translateY(-5px);
   }
+/********************************************* */
+
+/* courses page styling , Jory */
+
+.top-courses-topics {
+  text-align: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+  font-family:New Roman, serif; 
+  ;
+}
+
+
+.top-topic1, .top-topic2, .top-topic3, .top-topic4 {
+  display: inline-block;
+  width: 250px;
+  margin: 10px;
+  padding: 10px;
+  border-bottom: 5px solid #9e2189;
+  text-align: left;
+  font-family: Times New Roman, serif; 
+
+}
+
+
+.top-topic1 img, .top-topic2 img, .top-topic3 img, .top-topic4 img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: filter 0.3s; 
+}
+
+
+.top-topic1 h3, .top-topic2 h3, .top-topic3 h3, .top-topic4 h3 {
+  font-size: 20px;
+  color: #333;
+  margin: 10px 0;
+}
+
+
+.top-topic1 p, .top-topic2 p, .top-topic3 p, .top-topic4 p , .course-info p, .course-info ul li, .course-info h6 ,.course-info hr{
+  font-size: 14px;
+  color: #666;
+  display: none; 
+}
+
+
+.top-topic1 p:last-child, .top-topic2 p:last-child, .top-topic3 p:last-child, .top-topic4 p:last-child {
+  font-weight: bold;
+  color: #ff6600;
+  margin-top: 10px;
+}
+
+.top-topic1:hover img, .top-topic2:hover img, .top-topic3:hover img, .top-topic4:hover img {
+  filter: blur(3px); 
+}
+
+.top-topic1:hover p, .top-topic2:hover p, .top-topic3:hover p, .top-topic4:hover p, .course-info:hover p, .course-info:hover ul li , .course-info:hover h6 , .course-info:hover hr{
+  display: block; 
+}
+
+
+.courses h2 ,h3 { 
+
+text-align: center ;
+font-family: Times New Roman, serif; 
+
+
+}
+
+.courses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+.courses > div {
+  width: 250px;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  font-family: Times New Roman, serif; 
+
+}
+
+.courses > div:hover {
+  transform: translateY(-5px);
+}
+
+
+.course-border {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.courses img {
+  max-width: 100%;
+  height: auto;
+  max-height: 150px; 
+  width: auto;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.courses h3 {
+  font-size: 18px;
+  color: #333;
+  margin: 10px 0;
+  font-family: Times New Roman, serif; 
+
+}
+
+.courses p {
+  font-size: 14px;
+  color: #666;
+  font-family: Times New Roman, serif; 
+
+}
+.course-info ul {
+  list-style: disc inside;
+  margin: 10px 0;
+  padding-left: 20px;
+  font-family: Times New Roman, serif; 
+
+}
+
+.course-info ul li {
+  font-size: 14px;
+  color: #666;
+  font-family: Times New Roman, serif; 
+
+}
+
+/* End courses page */
+/********************************************* */
+
+/* Evaluation page styling , Jory*/
+
+.course-title {
+  text-align: center;
+  padding: 20px;
+}
+
+.rating input[type="radio"] {
+  display: none;
+}
+
+.rating label {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.rating label:before {
+  content: "\2605"; /* Unicode character for a star */
+  margin: 5px;
+}
+
+.rating input[type="radio"]:checked ~ label:before {
+  color: orange;
+}
+
+.review {
+  clear: both;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.review label {
+  font-size: 16px;
+  color: #666;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.review textarea {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.review button {
+  padding: 10px 20px;
+  background-color: #0074d9;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.course-evaluation {
+  clear: both;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.course-title, .rating, .review {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+/* End evaluation page */
