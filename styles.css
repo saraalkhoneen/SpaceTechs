@@ -370,7 +370,7 @@ button {
 .breadcrumbs {
     text-align: left; /* Align breadcrumbs to the left */
     margin-top: 10px; /* Adjust the margin as needed */
-    font-size: 14px;
+    font-size: 12px;
   }
   
   .breadcrumbs ul {
