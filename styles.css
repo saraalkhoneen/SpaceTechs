@@ -14,7 +14,7 @@ body {
 
 /* Header styles */
 header {
-    background: linear-gradient(90deg, #5f737e, #05215d); /* Replace the colors as per your preference */
+    background: linear-gradient(90deg, #5f737e, #05215d); 
     color: #fff;
     padding: 10px;
     display: flex;
