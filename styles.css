@@ -145,9 +145,10 @@ nav a {
     font-size: 16px;
     margin: 0;
 }
-.user-card > div:hover {
+.user-card:hover {
     transform: translateY(-5px);
-  }
+}
+
 /* Footer styles */
 footer {
     background-color: #333;
