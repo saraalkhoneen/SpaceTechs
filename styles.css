@@ -7,14 +7,14 @@
 
 /*  background color and text color */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: Times New Roman, serif;
     background-color: #f7f7f7;
     color: #333;
 }
 
 /* Header styles */
 header {
-    background: linear-gradient(90deg, #696a8a, #0d0f8e); /* Replace the colors as per your preference */
+    background: linear-gradient(90deg, #5f737e, #05215d); /* Replace the colors as per your preference */
     color: #fff;
     padding: 10px;
     display: flex;
