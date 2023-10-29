@@ -14,6 +14,7 @@
         </div>
         <nav>
             <ul>
+                <li><a href="homepage.html">homepage</a></li>
                 <li><a href="ParentsDashboard.html">Parent's Dashboard</a></li>
                 <li><a href="AdministratorsDashboard.html">Administrator's Dashboard</a></li>
                 <li><a href="Courses.html">Courses</a></li>
@@ -26,7 +27,15 @@
         <h2>Course Enrollment</h2>
         <section class="student-name">
             <label for="studentName">Student Name:</label>
-            <input type="text" id="studentName" name="studentName" required>
+            <select id="studentName" name="studentName">
+                <option value="none">None</option>
+                <option value="name1">Sara</option>
+                <option value="name2">Abdullah</option>
+                <option value="name3">Badr</option>
+                <option value="name4">Jory</option>
+                <option value="name5">Omaimah</option>
+                <option value="name6">Mohhamed</option>
+            </select>
         </section>
 
         <!-- ... (filter) ... -->
@@ -45,8 +54,10 @@
         <label for="tutor">Tutor:</label>
         <select id="tutor" name="tutor">
             <option value="all">All Tutors</option>
-            <option value="tutor1">Tutor 1</option>
-            <option value="tutor2">Tutor 2</option>
+            <option value="tutor1">Dr. lama</option>
+            <option value="tutor2">Dr. Hussah</option>
+            <option value="tutor1">Dr. Amal</option>
+            <option value="tutor2">Dr. Tariq</option>
         </select>
     </div>
 </section>
@@ -60,7 +71,7 @@
         <p>An engaging course that introduces children to the exciting world of robotics and helps them build their own simple robots.</p>
         <input type="checkbox" id="course1" name="course1">
         <label for="course1">Enroll</label>
-    </div>
+     </div>
 
     <div class="course course-2">
         <img src="img/course2.png" alt="Course 2">
