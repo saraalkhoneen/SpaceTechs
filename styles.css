@@ -387,73 +387,57 @@ select {
 
 }
 
-/* Add colored bottom border to each course, same styling goes for courses, reviews and tutors */
- .course-1::after , .review-1::after, .tutor-1::after, .child-1::after{
+/* Add colored bottom border to each box */
+
+.style-1::after, .style-2::after, .style-3::after, .style-4::after, .style-5::after, .style-6::after {
+	
+	
     content: "";
-    display: block;
-    width: 100%;
-    height: 3px; /* Adjust the line thickness */
-    background-color: #471b50; /* Line color for Course 1 */
+   display: block;
+   width: 100%;
+   height: 3px; /* Adjust the line thickness */
     position: absolute;
-    bottom: 0;
-    left: 0;
+   bottom: 0;
+   left: 0;
+   
+   
+}
+
+.style-1::after {
+   
+   background-color: #471b50; /* Line color for style 1 */
+  
 } 
 
-.course-2::after , .review-2::after, .tutor-2::after, .child-2::after{
-    content: "";
-    display: block;
-    width: 100%;
-    height: 3px; /* Adjust the line thickness */
-    background-color: #3398db; /* Line color for Course 2 */
-    position: absolute;
-    bottom: 0;
-    left: 0;
+.style-2::after {
+
+   background-color: #3398db; /* Line color for style 2 */
+   
 }
 
-.course-3::after, .review-3::after, .tutor-3::after, .child-3::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 3px; /* Adjust the line thickness */
-    background-color: #ae5dc5; /* Line color for Course 3 */
-    position: absolute;
-    bottom: 0;
-    left: 0;
+.style-3::after {
+   
+   background-color: #ae5dc5; /* Line color for style 3 */
+
 }
 
-.course-4::after, .tutor-4::after, .child-4::after  {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 3px; /* Adjust the line thickness */
-    background-color: #334eff; /* Line color for Course 4 */
-    position: absolute;
-    bottom: 0;
-    left: 0;
+.style-4::after  {
+
+   background-color: #334eff; /* Line color for style 4 */
+ 
 }
 
-.course-5::after, .tutor-5::after, .child-5::after  {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 3px; /* Adjust the line thickness */
-    background-color: #9e2189; /* Line color for Course 5 */
-    position: absolute;
-    bottom: 0;
-    left: 0;
+.style-5::after {
+  
+   background-color: #9e2189; /* Line color for style 5 */
+  
 }
 
-.course-6::after, .tutor-6::after, .child-6::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 3px; /*  line thickness */
-    background-color: #a200ff; /* Line color for Course 6 */
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
+.style-6::after {
+ 
+   background-color: #a200ff; /* Line color for style 6 */
 
+}
 .course img {
     width: 100%;
     height: 150px; 
