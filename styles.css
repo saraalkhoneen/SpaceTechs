@@ -643,7 +643,11 @@ nav a {
     max-width: 100px; /* Adjust the desired width */
     height: auto;
 }
-
+.user-card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s;
+  }
+  
 
 /* Footer styles */
 footer {
@@ -907,3 +911,4 @@ button {
   .courses > div:hover {
     transform: translateY(-5px);
   }
+  
