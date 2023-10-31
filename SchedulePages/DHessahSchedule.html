@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>D.Malak Schedule Page</title>
-    <link rel="stylesheet" href="/HendCSS/styles.css">
+    <title>T.Hessah Schedule Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     
-<header> <!-- logo and navigation bar -->
+   <header> <!-- logo and navigation bar -->
 
     <div class="logo">
 	<a href="home.html"><img src="logo.png" height="30" width="156" /></a>
@@ -37,9 +37,9 @@
         </nav>
 <hr>
             <div class="table-container">
-                <table border="1" class="Malak">
+                <table border="1" class="Hessah">
                     <caption>Schedule</caption>
-                    <thead id="table-header">
+                    <thead>
                         <th colspan="2"></th>
                         <th>Sunday</th>
                         <th>Monday</th>
@@ -52,13 +52,10 @@
 
                     <tbody>
                         <tr>
-                            <td id="teacher" rowspan="5" >D.Malak</td>
+                            <td id="teacher" rowspan="5" >T.Hessah</td>
                             <td data-cell="Time">3:00-4:00</td>
-                            <td data-cell="Sunday-class"></td>
-                            <td data-cell="Monday-class"></td>
-                            <td data-cell="Tuesday-class"></td>
-                            <td data-cell="Wednesday-class"></td>
-                            <td data-cell="Thursday-class"></td>
+                            <td data-cell="Sunday-class" colspan="4">Web design <span>(Lecture)</span> </td> <!--colspan-->
+                            <td data-cell="Thursday-class" rowspan="5">Digital art and animation</td> <!--rowspan-->
                             <td data-cell="Friday-class"></td>
                             <td data-cell="Saturday-class"></td>
                         </tr>
@@ -69,8 +66,8 @@
                             <td data-cell="Time">4:00-5:00</td>
                             <td data-cell="Sunday-class"></td>
                             <td data-cell="Monday-class"></td>
-                            <td data-cell="Tuesday-class" colspan="2">3D Art Adventure <span>(Lab)</span></td>
-                            <td data-cell="Thursday-class"></td>
+                            <td data-cell="Tuesday-class"></td>
+                            <td data-cell="Wednesday-class"></td>
                             <td data-cell="Friday-class"></td>
                             <td data-cell="Saturday-class"></td>
                         </tr>
@@ -81,10 +78,8 @@
                         
                             <td data-cell="Time">5:00-6:00</td>
                             <td data-cell="Sunday-class"></td>
-                            <td data-cell="Monday-class"></td>
-                            <td data-cell="Tuesday-class"></td>
+                            <td data-cell="Monday-class" colspan="2" rowspan="2">Web design <span>(Lab)</span></td> <!--colspan-->
                             <td data-cell="Wednesday-class"></td>
-                            <td data-cell="Thursday-class"></td>
                             <td data-cell="Friday-class"></td>
                             <td data-cell="Saturday-class"></td>
                         </tr>
@@ -94,7 +89,8 @@
                         <tr>
                             <td data-cell="Time">6:00-7:00</td>
                             <td data-cell="Sunday-class"></td>
-                            <td data-cell="Monday-class" colspan="4">3D Art Adventure <span>(Lecture)</span></td>
+                            
+                            <td data-cell="Wednesday-class"></td>
                             <td data-cell="Friday-class"></td>
                             <td data-cell="Saturday-class"></td>
                         </tr>
@@ -107,7 +103,6 @@
                             <td data-cell="Monday-class"></td>
                             <td data-cell="Tuesday-class"></td>
                             <td data-cell="Wednesday-class"></td>
-                            <td data-cell="Thursday-class"></td>
                             <td data-cell="Friday-class"></td>
                             <td data-cell="Saturday-class"></td>
                         </tr>
@@ -120,7 +115,7 @@
     </main>
 
 <br>
-     <footer>
+   <footer>
         <div class="footer-content">
             <p>&copy; 2023 Space Techs</p>
             <a href="mailto:SpaceTechs@gmail.com" title= "Click to send an email" class="contact-link">
