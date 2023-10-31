@@ -177,7 +177,7 @@ margin-left: 35px;
 .dashboard-menu a {
     display: block;
     padding: 10px;
-    background-color: #2a1c4b;
+    background-color: #172b5e;
     color: #fff;
     text-decoration: none;
     text-align: center;
@@ -186,7 +186,7 @@ margin-left: 35px;
 }
 
 .dashboard-menu a:hover {
-    background-color: #1d1a3d;
+    background-color: #2a3c53;
 }
 
 
@@ -302,7 +302,7 @@ label, input, select {
 
 button {
     padding: 10px 20px;
-    background-color: #440aa6;
+    background-color: #09285e;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -315,7 +315,7 @@ button {
 }
 
 #registerButton {
-    background-color: #440aa6;
+    background-color: #071563;
 }
 
 
@@ -479,7 +479,7 @@ button {
 
 
 
-
+/******************************/
 /* Dashboard Menu styles */
 .dashboard-menu {
     float: right;
@@ -506,7 +506,7 @@ button {
 .dashboard-menu a {
     display: block;
     padding: 10px;
-    background-color: #2a1c4b;
+    background-color: #061b3a;
     color: #fff;
     text-decoration: none;
     text-align: center;
@@ -515,9 +515,9 @@ button {
 }
 
 .dashboard-menu a:hover {
-    background-color: #1d1a3d;
+    background-color: #233e56;
 }
-
+/*********************************************/
 
 /* User Card styles */
 .registered-kids {
