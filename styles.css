@@ -45,6 +45,13 @@ nav a {
     text-decoration: none;
     color: #fff;
 }
+/* Footer styles */
+footer {
+    background: linear-gradient(90deg, #696a8a, #0d0f8e);
+    color: #000000;
+    text-align: center;
+    padding: 5px;
+}
 /**************************************************************************/
 /*************************************************************************/
 /* vision styling */
@@ -246,13 +253,7 @@ margin-left: 35px;
     margin: 0;
 }
 
-/* Footer styles */
-footer {
-    background-color: #BBBFDC;
-    color: #000000;
-    text-align: center;
-    padding: 5px;
-}
+
 
 .contact-link {
     color: #000000;
