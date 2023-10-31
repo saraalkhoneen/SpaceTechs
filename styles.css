@@ -785,72 +785,7 @@ select {
 
 
 
-/* Add colored bottom border to each course */
-.course-1::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 3px; /* Adjust the line thickness */
-    background-color: #471b50; /* Line color for Course 1 */
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
 
-.course-2::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 3px; /* Adjust the line thickness */
-    background-color: #3398db; /* Line color for Course 2 */
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
-.course-3::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 3px; /* Adjust the line thickness */
-    background-color: #ae5dc5; /* Line color for Course 3 */
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
-.course-4::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 3px; /* Adjust the line thickness */
-    background-color: #334eff; /* Line color for Course 4 */
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
-.course-5::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 3px; /* Adjust the line thickness */
-    background-color: #9e2189; /* Line color for Course 5 */
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
-.course-6::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 3px; /* Adjust the line thickness */
-    background-color: #a200ff; /* Line color for Course 6 */
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
 
 .course img {
     width: 100%; /* Ensure the width takes up the full container */
