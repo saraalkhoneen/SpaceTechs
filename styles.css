@@ -6,14 +6,14 @@
 
 /* Set a background color and text color */
 body {
-    font-family: "Times New Roman", Times, serif;
+    font-family: Arial, sans-serif;
     background-color: #f7f7f7;
     color: #333;
 }
 
 /* Header styles */
 header {
-    background-color: #BBBFDC;
+    background: linear-gradient(90deg, #696a8a, #0d0f8e);
     color: #fff;
     padding: 10px;
     display: flex;
@@ -35,21 +35,18 @@ header {
 nav ul {
     list-style: none;
     display: flex;
-
 }
 
 nav li {
     margin-right: 20px;
-	
 }
 
 nav a {
     text-decoration: none;
-    color: #000000;
+    color: #fff;
 }
-
-
-
+/**************************************************************************/
+/*************************************************************************/
 /* vision styling */
 
 .vision hr, p {
@@ -479,53 +476,7 @@ button {
   margin: 0 5px; /* Adjust the margin as needed */
   color: #333; /* Adjust the color as needed*/
 }
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-/* Set a background color and text color */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
-    color: #333;
-}
-
-/* Header styles */
-header {
-    background: linear-gradient(90deg, #696a8a, #0d0f8e);
-    color: #fff;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo img {
-    max-width: 100px;
-    height: auto;
-    margin-right: 10px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-}
-
-nav li {
-    margin-right: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #fff;
-}
 
 
 
@@ -648,6 +599,12 @@ footer {
 }
 
 
+/************************************************************************************ */
+
+
+
+/************************************************************************************ */
+
 
 /* Styles for Register New Child Page */
 .register-new-child {
@@ -707,6 +664,12 @@ button {
 
 
 
+
+/************************************************************************************ */
+
+
+
+/************************************************************************************ */
 
 
 
@@ -977,7 +940,12 @@ font-family: Times New Roman, serif;
 }
 
 /* End courses page */
-/********************************************* */
+/************************************************************************************ */
+
+
+
+/************************************************************************************ */
+
 
 /* Evaluation page styling , Jory*/
 
