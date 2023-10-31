@@ -1,20 +1,19 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/*  background color and text color */
+/* Set a background color and text color */
 body {
-    font-family: Times New Roman, serif;
+    font-family: "Times New Roman", Times, serif;
     background-color: #f7f7f7;
     color: #333;
 }
 
 /* Header styles */
 header {
-    background: linear-gradient(90deg, #5f737e, #05215d); 
+    background-color: #BBBFDC;
     color: #fff;
     padding: 10px;
     display: flex;
@@ -36,19 +35,125 @@ header {
 nav ul {
     list-style: none;
     display: flex;
+
 }
 
 nav li {
     margin-right: 20px;
+	
 }
 
 nav a {
     text-decoration: none;
-    color: #fff;
+    color: #000000;
 }
 
 
-/***********************************************************/
+
+/* vision styling */
+
+.vision hr, p {
+	
+font-size: 20px;
+text-indent: 25px;
+margin-top: 25px;
+}
+
+/* homepage courses styling */
+
+h2{
+	
+margin-top: 20px;
+font-size:30px;
+text-align: center;	
+	
+}
+
+h4{
+	
+font-size: 25px;	
+	
+}
+.HPcourses, .reviews, .tutors {
+
+ display: flex;
+  flex-wrap: nowrap;
+  margin: 25px;
+  text-align: center;
+  padding: 20px;
+}
+
+
+
+/*homepage reviews*/
+
+.review { /* adjust review boxes placement */
+	
+	margin-left: 15px;
+	
+}
+
+.reviews > div:hover, .HPcourses > div:hover {
+  transform: translateY(-5px);
+}
+
+.parentName {
+	text-align: center;
+}
+
+.fa {
+	
+  font-size: 25px;
+}
+
+.checked {
+  color: yellow;
+}
+
+
+
+/*tutors*/
+
+    .scroll-menu {
+        
+    margin: 10px, 10px;
+padding: 4px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+	display: flex;
+flex-wrap: nowrap;
+text-align: center;
+     
+	}
+	
+	
+
+.scroll-menu li { 
+margin-left: 35px;
+     width: 200px;
+     display: inline-block;
+     float: left ;
+	 
+     }
+
+/* students */
+.students, .courses, .ADcourses { /* adjust spacing */
+	
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+
+ /* courses */ 
+.seeMore {
+	
+	color: blue;
+}
+
+
+  
+
 /* Dashboard Menu styles */
 .dashboard-menu {
     float: right;
@@ -75,7 +180,7 @@ nav a {
 .dashboard-menu a {
     display: block;
     padding: 10px;
-    background-color: #131c4f;
+    background-color: #2a1c4b;
     color: #fff;
     text-decoration: none;
     text-align: center;
@@ -84,10 +189,10 @@ nav a {
 }
 
 .dashboard-menu a:hover {
-    background-color: #334e70;
+    background-color: #1d1a3d;
 }
 
-/***********************************************************/
+
 /* User Card styles */
 .registered-kids {
     flex: 2;
@@ -131,10 +236,8 @@ nav a {
 }
 
 .user-card img {
-    max-width: 100px; 
-    height: auto;
+    max-width: 100%;
 }
-
 
 .user-card h3 {
     font-size: 18px;
@@ -145,26 +248,23 @@ nav a {
     font-size: 16px;
     margin: 0;
 }
-.user-card:hover {
-    transform: translateY(-5px);
-}
 
 /* Footer styles */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #BBBFDC;
+    color: #000000;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
 }
 
 .contact-link {
-    color: #fff;
+    color: #000000;
     text-decoration: none;
     margin-left: 10px;
 }
 
 
-/***********************************************************/
+
 /* Styles for Register New Child Page */
 .register-new-child {
     display: flex;
@@ -225,7 +325,7 @@ button {
 
 
 
-/***********************************************************/
+
 /*  Course Enrollment Page */
 
 .course-enrollment {
@@ -270,24 +370,25 @@ select {
     flex-basis: calc(50% - 10px);
 }
 
-.courses {
+.courses{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 20px;
 }
 
-.course {
+.course, .review , .tutor, .student, .box { /* same styling goes for courses, reviews, tutors and students */
     flex-basis: calc(33.33% - 20px);
     padding: 20px;
     border-radius: 5px;
     margin-bottom: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     position: relative;
+
 }
 
-/* Add colored bottom border to each course */
-.course-1::after {
+/* Add colored bottom border to each course, same styling goes for courses, reviews and tutors */
+ .course-1::after , .review-1::after, .tutor-1::after, .child-1::after{
     content: "";
     display: block;
     width: 100%;
@@ -296,9 +397,9 @@ select {
     position: absolute;
     bottom: 0;
     left: 0;
-}
+} 
 
-.course-2::after {
+.course-2::after , .review-2::after, .tutor-2::after, .child-2::after{
     content: "";
     display: block;
     width: 100%;
@@ -309,7 +410,7 @@ select {
     left: 0;
 }
 
-.course-3::after {
+.course-3::after, .review-3::after, .tutor-3::after, .child-3::after {
     content: "";
     display: block;
     width: 100%;
@@ -320,7 +421,7 @@ select {
     left: 0;
 }
 
-.course-4::after {
+.course-4::after, .tutor-4::after, .child-4::after  {
     content: "";
     display: block;
     width: 100%;
@@ -331,7 +432,7 @@ select {
     left: 0;
 }
 
-.course-5::after {
+.course-5::after, .tutor-5::after, .child-5::after  {
     content: "";
     display: block;
     width: 100%;
@@ -342,7 +443,7 @@ select {
     left: 0;
 }
 
-.course-6::after {
+.course-6::after, .tutor-6::after, .child-6::after {
     content: "";
     display: block;
     width: 100%;
@@ -369,247 +470,28 @@ button {
 
 /* Style for the breadcrumbs */
 .breadcrumbs {
-    text-align: left; 
-    margin-top: 10px; 
-    font-size: 12px;
-  }
-  
-  .breadcrumbs ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .breadcrumbs li {
-    display: inline;
-  }
-  .breadcrumbs a {
-    text-decoration: none;
-    color: #333; 
-  }
-  
-  /* Style for the breadcrumb separator */
-  .breadcrumbs li::after {
-    content: '>';
-    margin: 0 5px; 
-    color: #333; 
-  }
-  .courses > div:hover {
-    transform: translateY(-5px);
-  }
-/********************************************* */
-
-/* courses page styling , Jory */
-
-.top-courses-topics {
-  text-align: center;
-  padding: 20px;
-  background-color: #f4f4f4;
-  font-family:New Roman, serif; 
-  ;
-}
-
-
-.top-topic1, .top-topic2, .top-topic3, .top-topic4 {
-  display: inline-block;
-  width: 250px;
-  margin: 10px;
-  padding: 10px;
-  border-bottom: 5px solid #9e2189;
-  text-align: left;
-  font-family: Times New Roman, serif; 
-
-}
-
-
-.top-topic1 img, .top-topic2 img, .top-topic3 img, .top-topic4 img {
-  width: 100%;
-  height: auto;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  transition: filter 0.3s; 
-}
-
-
-.top-topic1 h3, .top-topic2 h3, .top-topic3 h3, .top-topic4 h3 {
-  font-size: 20px;
-  color: #333;
-  margin: 10px 0;
-}
-
-
-.top-topic1 p, .top-topic2 p, .top-topic3 p, .top-topic4 p , .course-info p, .course-info ul li, .course-info h6 ,.course-info hr{
+  text-align: left; /* Align breadcrumbs to the left */
+  margin-top: 10px; /* Adjust the margin as needed */
   font-size: 14px;
-  color: #666;
-  display: none; 
 }
 
-
-.top-topic1 p:last-child, .top-topic2 p:last-child, .top-topic3 p:last-child, .top-topic4 p:last-child {
-  font-weight: bold;
-  color: #ff6600;
-  margin-top: 10px;
+.breadcrumbs ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.top-topic1:hover img, .top-topic2:hover img, .top-topic3:hover img, .top-topic4:hover img {
-  filter: blur(3px); 
+.breadcrumbs li {
+  display: inline;
+}
+.breadcrumbs a {
+  text-decoration: none;
+  color: #333; /* Adjust the color as needed */
 }
 
-.top-topic1:hover p, .top-topic2:hover p, .top-topic3:hover p, .top-topic4:hover p, .course-info:hover p, .course-info:hover ul li , .course-info:hover h6 , .course-info:hover hr{
-  display: block; 
+/* Style for the breadcrumb separator */
+.breadcrumbs li::after {
+  content: '>';
+  margin: 0 5px; /* Adjust the margin as needed */
+  color: #333; /* Adjust the color as needed*/
 }
-
-
-.courses h2 ,h3 { 
-
-text-align: center ;
-font-family: Times New Roman, serif; 
-
-
-}
-
-.courses {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-
-.courses > div {
-  width: 250px;
-  background-color: #fff;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s;
-  font-family: Times New Roman, serif; 
-
-}
-
-.courses > div:hover {
-  transform: translateY(-5px);
-}
-
-
-.course-border {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-
-.courses img {
-  max-width: 100%;
-  height: auto;
-  max-height: 150px; 
-  width: auto;
-  border-radius: 5px;
-  margin: 10px 0;
-}
-
-.courses h3 {
-  font-size: 18px;
-  color: #333;
-  margin: 10px 0;
-  font-family: Times New Roman, serif; 
-
-}
-
-.courses p {
-  font-size: 14px;
-  color: #666;
-  font-family: Times New Roman, serif; 
-
-}
-.course-info ul {
-  list-style: disc inside;
-  margin: 10px 0;
-  padding-left: 20px;
-  font-family: Times New Roman, serif; 
-
-}
-
-.course-info ul li {
-  font-size: 14px;
-  color: #666;
-  font-family: Times New Roman, serif; 
-
-}
-
-/* End courses page */
-/********************************************* */
-
-/* Evaluation page styling , Jory*/
-
-.course-title {
-  text-align: center;
-  padding: 20px;
-}
-
-.rating input[type="radio"] {
-  display: none;
-}
-
-.rating label {
-  font-size: 25px;
-  cursor: pointer;
-}
-
-.rating label:before {
-  content: "\2605"; /* Unicode character for a star */
-  margin: 5px;
-}
-
-.rating input[type="radio"]:checked ~ label:before {
-  color: orange;
-}
-
-.review {
-  clear: both;
-  text-align: center;
-  margin-top: 20px;
-}
-
-.review label {
-  font-size: 16px;
-  color: #666;
-  display: block;
-  margin-bottom: 5px;
-}
-
-.review textarea {
-  width: 100%;
-  max-width: 400px;
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.review button {
-  padding: 10px 20px;
-  background-color: #0074d9;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.course-evaluation {
-  clear: both;
-  text-align: center;
-  margin-top: 20px;
-}
-
-.course-title, .rating, .review {
-  width: 100%;
-  display: inline-block;
-  text-align: center;
-}
-/* End evaluation page */
