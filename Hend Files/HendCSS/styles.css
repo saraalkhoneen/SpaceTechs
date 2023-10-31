@@ -96,7 +96,7 @@ nav a {
     gap: 15px;
 }
 
-.container .box-container .box{
+.container .box-container .tutorsBox{
     box-shadow: 0 5px 10px rgba(0,0,0,.2);
     border-radius: 5px;
     background: #fff;
@@ -104,24 +104,24 @@ nav a {
     padding: 30px 20px;
 }
 
-.container .box-container .box img{
+.container .box-container .tutorsBox img{
     height: 80px;
 }
 
-.container .box-container .box h3{
+.container .box-container .tutorsBox h3{
     color: rgb(99, 31, 113);
     font-size: 22px;
     padding: 10px 0;
 
 }
 
-.container .box-container .box p{
+.container .box-container .tutorsBox p{
     color: rgb(60, 37, 64);
     font-size: 15px;
     line-height: 1.8;
 }
 
-.container .box-container .box .btn{
+.container .box-container .tutorsBox .btn{
     margin-top: 10px;
     display: inline-block;
     background-color: #333;
@@ -131,11 +131,11 @@ nav a {
     padding: 8px 25px;
 }
 
-.container .box-container .box .btn:hover {
+.container .box-container .tutorsBox .btn:hover {
     letter-spacing: 0.5px;
 }
 
-.container .box-container .box:hover{
+.container .box-container .tutorsBox:hover{
     box-shadow: 0 10px 15px rgba(0,0,0,.3);
     transform: scale(1.03);
 }
