@@ -5,6 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register New Child</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.querySelector("form");
+
+            form.addEventListener("submit", function (event) {
+                event.preventDefault();
+
+                // Validate form inputs
+                const name = document.getElementById("name").value;
+                const dob = document.getElementById("dob").value;
+                const gender = document.getElementById("gender").value;
+                const email = document.getElementById("email").value;
+                const phone = document.getElementById("phone").value;
+
+                if (!name || !dob || !gender || !email || !phone) {
+                    alert("Please fill in all fields.");
+                    return;
+                }
+
+                // Additional validation for specific fields
+                if (!/^[a-zA-Z]/.test(name)) {
+                    alert("Name should start with a letter.");
+                    return;
+                }
+
+                if (phone.length !== 10 || !/^\d+$/.test(phone)) {
+                    alert("Phone number should be 10 digits.");
+                    return;
+                }
+
+                const currentYear = new Date().getFullYear();
+                const childBirthYear = new Date(dob).getFullYear();
+
+                if (currentYear - childBirthYear < 6) {
+                    alert("Children younger than 6 years old are not accepted.");
+                    return;
+                }
+
+                // Form is valid, save child's information to local storage
+                const childInfo = {
+                    name: name,
+                    dob: dob,
+                    gender: gender,
+                    email: email,
+                    phone: phone,
+                    photo: URL.createObjectURL(document.getElementById("picUpload").files[0]),
+                };
+
+                localStorage.setItem("parentChild", JSON.stringify(childInfo));
+
+                // Display child information on the page
+                displayChildInfo(childInfo);
+
+                // Ask the user if they want to print
+                if (window.confirm("Do you want to print the child's information?")) {
+                    window.print();
+                }
+            });
+
+            // Function to display child information on the page
+            function displayChildInfo(childInfo) {
+                const childDetailsSection = document.querySelector(".child-details");
+
+                // Clear previous content
+                childDetailsSection.innerHTML = "";
+
+                // Display photo
+                const photoImg = document.createElement("img");
+                photoImg.src = childInfo.photo;
+                photoImg.alt = "Child Photo";
+                childDetailsSection.appendChild(photoImg);
+
+                // Create elements to display child information
+                const heading = document.createElement("h2");
+                heading.textContent = "Child Details";
+                childDetailsSection.appendChild(heading);
+
+                const detailsList = document.createElement("ul");
+
+                for (const [key, value] of Object.entries(childInfo)) {
+                    const listItem = document.createElement("li");
+                    listItem.textContent = `${key.charAt(0).toUpperCase() + key.slice(1)}: ${value}`;
+                    detailsList.appendChild(listItem);
+                }
+
+                childDetailsSection.appendChild(detailsList);
+            }
+        });
+    </script>
 </head>
 <body>
  
@@ -34,11 +123,11 @@
             <li>register new child</li>
         </ul>
         </nav>
-    <main class="register-new-child">
-        <section class="upload-pic">
-            <h2>Upload a Pic</h2>
-            <input type="file" id="picUpload" name="picUpload" accept="image/*">
-        </section>
+<main class="register-new-child">
+    <section class="upload-pic">
+        <h2>Upload a Pic</h2>
+        <input type="file" id="picUpload" name="picUpload" accept="image/*">
+    </section>
 
         <section class="child-details">
             <h2>Child Details</h2>

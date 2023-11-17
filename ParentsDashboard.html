@@ -7,7 +7,32 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  <link rel="website icon" type="website tap" href="icons/taplogo.jpg">
+ <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Check if local storage has parent's children
+        let childrenNames = localStorage.getItem("parentChildren");
 
+        if (!childrenNames) {
+            // Local storage is empty, save default children's names
+            const defaultChildren = ["Sara", "Hend"];
+            localStorage.setItem("parentChildren", JSON.stringify(defaultChildren));
+            displayChildren(defaultChildren);
+        } else {
+            // Local storage has children's names, retrieve and display
+            displayChildren(JSON.parse(childrenNames));
+        }
+
+        function displayChildren(children) {
+            // Display children's names in the user cards
+            const userCards = document.querySelectorAll(".user-card");
+
+            for (let i = 0; i < userCards.length && i < children.length; i++) {
+                const userName = userCards[i].querySelector("h3");
+                userName.textContent = children[i];
+            }
+        }
+    });
+</script>
 </head>
 <body>
 
