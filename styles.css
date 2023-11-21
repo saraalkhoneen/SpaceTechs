@@ -1060,7 +1060,13 @@ font-family: Times New Roman, serif;
 
 /************************tutors page and schedule************************************/
 
+#sort{
 
+background-color:var(--primary-color);
+color:var(--secondary-color);
+
+
+}
 .container h1 {
     padding-top: 15px;
     padding-bottom: 15px;
