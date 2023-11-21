@@ -36,12 +36,17 @@ left: 650px;
     --secondary-color: #333;
     --header-color: linear-gradient(90deg, #696a8a, #0d0f8e);
     --text-color:#333; 
+    --text-color2: rgb(99, 31, 113);
+    --text-color3:#333 ;
 }
 .dark-theme{
     --primary-color: #3b3c4a;
     --secondary-color:  #fff7f7;
     --header-color: linear-gradient(90deg, #292a3c, #26262f);
     --text-color:#fff7f7; 
+    --text-color2: rgb(255, 255, 255);
+    --text-color3:black ;
+
 }
 
 
@@ -226,9 +231,9 @@ margin-left: 35px;
 
 /* Dashboard Menu styles */
 .dashboard-menu {
+    background-color: var( --primary-color);
     float: right;
     width: 25%;
-    background-color: #f2f2f2;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -236,22 +241,27 @@ margin-left: 35px;
 
 .dashboard-menu h2 {
     font-size: 20px;
+    background-color: var( --primary-color);
+
 }
 
 .dashboard-menu ul {
     list-style: none;
     padding: 0;
+    background-color: var( --primary-color);
+
 }
 
 .dashboard-menu li {
     margin-bottom: 10px;
+
 }
 
 .dashboard-menu a {
     display: block;
     padding: 10px;
     background-color: #172b5e;
-    color: #fff;
+    color:var( --primary-color);
     text-decoration: none;
     text-align: center;
     border-radius: 5px;
@@ -266,16 +276,18 @@ margin-left: 35px;
 /* User Card styles */
 .registered-kids {
     flex: 2;
-    background-color: #fff;
+    background-color:var( --primary-color);
     padding: 20px;
     border-radius: 5px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    color: var( --primary-color);
+
 }
 
 .user-card {
-    background-color: #f9f9f9;
+    background-color:var( --primary-color);
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 20px;
@@ -288,11 +300,14 @@ margin-left: 35px;
     max-width: 100px;
     height: auto;
     border-radius: 50%;
+    background-color: var( --primary-color);
+
 }
 
 .user-card h3 {
     font-size: 20px;
     margin-top: 10px;
+    color:vqr( --primary-color);
 }
 
 .user-card p {
@@ -303,6 +318,8 @@ margin-left: 35px;
 .user-card {
     border-bottom: 3px solid #5c3c80;
     padding-bottom: 10px;
+    background-color: var( --primary-color);
+
 }
 
 .user-card img {
@@ -334,11 +351,13 @@ margin-left: 35px;
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    background-color: var( --primary-color);
+
 }
 
 .upload-pic, .child-details {
     flex: 1;
-    background-color: #fff;
+    background-color: var( --primary-color);
     padding: 20px;
     border-radius: 5px;
 }
@@ -346,6 +365,7 @@ margin-left: 35px;
 .upload-pic h2, .child-details h2 {
     font-size: 24px;
     margin-bottom: 20px;
+    color:var(--text-color3);
 }
 
 #picUpload {
@@ -355,16 +375,19 @@ margin-left: 35px;
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-bottom: 20px;
+     background-color: var( --primary-color);
 }
 
 form {
     display: flex;
     flex-wrap: wrap;
+    color:var(--text-color3) ;
 }
 
 label, input, select {
     width: 100%;
     margin-bottom: 10px;
+    
 }
 
 button {
@@ -1041,16 +1064,14 @@ font-family: Times New Roman, serif;
 .container h1 {
     padding-top: 15px;
     padding-bottom: 15px;
-    color: #333;
+    color: var( --secondary-color);
     text-shadow: 0 5px 10px rgba(0,0,0,.2) ;
     font-size: 30px;
 }
 
 .container {
-    background-color: #f7f7f7;
     padding: 15px 9%;
     padding-bottom: 100px;
-
 }
 
 .container .box-container{
@@ -1062,7 +1083,7 @@ font-family: Times New Roman, serif;
 .container .box-container .tutorsBox{
     box-shadow: 0 5px 10px rgba(0,0,0,.2);
     border-radius: 5px;
-    background: #fff;
+    background: var(--primary-color);
     text-align: center;
     padding: 30px 20px;
 }
@@ -1072,7 +1093,7 @@ font-family: Times New Roman, serif;
 }
 
 .container .box-container .tutorsBox h3{
-    color: rgb(99, 31, 113);
+    color:var(--text-color2);
     font-size: 22px;
     padding: 10px 0;
 
@@ -1120,16 +1141,20 @@ table{
     border: .5px solid grey;
     border-radius: 5px;
     margin: 20px 25px auto;
+    color:var( --text-color3);
 }
 
 #teacher{
     vertical-align: top;
+
 }
 
 caption{
     background-color: none;
     font-weight: bold;
     font-size: 30px;
+    color:var(  --secondary-color);
+
 }
 
 td{
