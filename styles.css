@@ -7,13 +7,13 @@
 /* Set a background color and text color */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
-    color: #333;
+    background-color: var( --primary-color);
+    color: var(--secondary-color);
 }
 
 /* Header styles */
 header {
-    background: linear-gradient(90deg, #696a8a, #0d0f8e);
+    background: var(--header-color);
     color: #fff;
     padding: 10px;
     display: flex;
@@ -31,8 +31,19 @@ left: 650px; /* Adjust as needed */
 }
 
 :root {
-    --primary-color: 
+
+    --primary-color:#f7f7f7; 
+    --secondary-color: #333;
+    --header-color: linear-gradient(90deg, #696a8a, #0d0f8e);
+    --breadcrumps-color:#333; 
 }
+.dark-theme{
+    --primary-color: #3b3c4a;
+    --secondary-color:  #fff7f7;
+    --header-color: linear-gradient(90deg, #292a3c, #26262f);
+    --breadcrumps-color:#fff7f7; 
+}
+
 
 
 
@@ -63,11 +74,50 @@ nav a {
 }
 /* Footer styles */
 footer {
-    background: linear-gradient(90deg, #696a8a, #0d0f8e);
+    background: var(--header-color);
     color: #000000;
     text-align: center;
     padding: 5px;
 }
+
+
+
+/* Footer styles */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Style for the breadcrumbs */
+.breadcrumbs {
+    text-align: left; /* Align breadcrumbs to the left */
+    margin-top: 10px; /* Adjust the margin as needed */
+    font-size: 14px;
+  }
+  
+  .breadcrumbs ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .breadcrumbs li {
+    display: inline;
+  }
+  .breadcrumbs a {
+    text-decoration: none;
+    color:var(--breadcrumps-color); 
+  }
+  /* Style for the breadcrumb separator */
+  .breadcrumbs li::after {
+    content: '>';
+    margin: 0 5px; 
+    color:var(--breadcrumps-color);
+  }
+  
 /**************************************************************************/
 /*************************************************************************/
 /* vision styling */
@@ -466,33 +516,6 @@ button {
     cursor: pointer;
 }
 
-/* Style for the breadcrumbs */
-.breadcrumbs {
-  text-align: left; /* Align breadcrumbs to the left */
-  margin-top: 10px; /* Adjust the margin as needed */
-  font-size: 14px;
-}
-
-.breadcrumbs ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.breadcrumbs li {
-  display: inline;
-}
-.breadcrumbs a {
-  text-decoration: none;
-  color: #333; /* Adjust the color as needed */
-}
-
-/* Style for the breadcrumb separator */
-.breadcrumbs li::after {
-  content: '>';
-  margin: 0 5px; /* Adjust the margin as needed */
-  color: #333; /* Adjust the color as needed*/
-}
 
 
 
@@ -601,13 +624,7 @@ button {
   }
   
 
-/* Footer styles */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-}
+
 
 .contact-link {
     color: #fff;
@@ -781,34 +798,6 @@ button {
     cursor: pointer;
 }
 
-
-/* Style for the breadcrumbs */
-.breadcrumbs {
-    text-align: left; /* Align breadcrumbs to the left */
-    margin-top: 10px; /* Adjust the margin as needed */
-    font-size: 14px;
-  }
-  
-  .breadcrumbs ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .breadcrumbs li {
-    display: inline;
-  }
-  .breadcrumbs a {
-    text-decoration: none;
-    color: #333; /* Adjust the color as needed */
-  }
-  
-  /* Style for the breadcrumb separator */
-  .breadcrumbs li::after {
-    content: '>';
-    margin: 0 5px; /* Adjust the margin as needed */
-    color: #333; /* Adjust the color as needed */
-  }
   .courses > div:hover {
     transform: translateY(-5px);
   }
@@ -1105,14 +1094,6 @@ font-family: Times New Roman, serif;
     transform: scale(1.03);
 }
 
-/* Footer styles */
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-}
 
 .contact-link {
     color: #fff;
