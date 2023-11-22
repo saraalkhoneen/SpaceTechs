@@ -9,29 +9,40 @@
  <link rel="website icon" type="website tap" href="icons/taplogo.jpg">
  <script>
     document.addEventListener("DOMContentLoaded", function () {
-        // Check if local storage has parent's children
-        let childrenNames = localStorage.getItem("parentChildren");
+        // Check local storage for parent's children
+        var storedChildren = localStorage.getItem("parentChildren");
 
-        if (!childrenNames) {
-            // Local storage is empty, save default children's names
-            const defaultChildren = ["Sara", "Hend"];
-            localStorage.setItem("parentChildren", JSON.stringify(defaultChildren));
-            displayChildren(defaultChildren);
+        if (!storedChildren) {
+            // If local storage is empty, save dummy data
+            var dummyChildren = ["Sara", "Hend"];
+            localStorage.setItem("parentChildren", JSON.stringify(dummyChildren));
         } else {
-            // Local storage has children's names, retrieve and display
-            displayChildren(JSON.parse(childrenNames));
-        }
-
-        function displayChildren(children) {
-            // Display children's names in the user cards
-            const userCards = document.querySelectorAll(".user-card");
-
-            for (let i = 0; i < userCards.length && i < children.length; i++) {
-                const userName = userCards[i].querySelector("h3");
-                userName.textContent = children[i];
-            }
+            // If local storage has data, retrieve and display it
+            var parsedChildren = JSON.parse(storedChildren);
+            displayChildren(parsedChildren);
         }
     });
+
+    function displayChildren(childrenArray) {
+        // Display the children in the user cards section
+        var userCardsContainer = document.querySelector(".registered-kids");
+
+        childrenArray.forEach(function (childName) {
+            var userCard = document.createElement("div");
+            userCard.classList.add("user-card");
+            userCard.innerHTML = `
+                <img src="icons/girl1.png" alt="${childName}">
+                <h3>${childName}</h3>
+                <p>Age: ${getRandomAge()}</p>
+            `;
+            userCardsContainer.appendChild(userCard);
+        });
+    }
+
+    function getRandomAge() {
+        // Generate a random age for demonstration purposes
+        return Math.floor(Math.random() * 12) + 1 + " years";
+    }
 </script>
 </head>
 <body>
