@@ -53,7 +53,15 @@
                     photo: URL.createObjectURL(document.getElementById("picUpload").files[0]),
                 };
 
-                localStorage.setItem("parentChild", JSON.stringify(childInfo));
+                // Check if there are already saved children in local storage
+                let parentChildren = JSON.parse(localStorage.getItem("parentChildren")) || [];
+
+                // Add the new child to the list
+                parentChildren.push(childInfo.name);
+
+                // Update local storage
+                localStorage.setItem("parentChildren", JSON.stringify(parentChildren));
+                localStorage.setItem("child_" + childInfo.name, JSON.stringify(childInfo));
 
                 // Display child information on the page
                 displayChildInfo(childInfo);
