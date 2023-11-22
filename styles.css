@@ -14,7 +14,7 @@ body {
 /* Header styles */
 header {
     background: var(--header-color);
-    color: #fff;
+    color: #2c2b2b;
     padding: 10px;
     display: flex;
     justify-content: space-between;
