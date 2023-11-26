@@ -1325,7 +1325,6 @@ table.Sharefah td[data-cell="Saturday-class"] {
     box-sizing: border-box;
 }
 
-/* Adjustments for header and navigation */
 header {
     display: flex;
     flex-direction: column;
@@ -1340,6 +1339,7 @@ header {
 
 h1 {
     margin: 0;
+    padding-right: 10px; /* Adds space between title and moon */
 }
 
 nav {
@@ -1358,7 +1358,7 @@ nav li {
     margin-bottom: 5px; /* Adjust as needed */
 }
 
-nav img {
+#moon {
     width: 20px; /* Adjust the width of the moon icon */
     height: auto;
 }
