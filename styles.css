@@ -22,7 +22,7 @@ header {
 }
 
 #moon {
-   max-width: 30px;
+max-width: 30px;
 cursor: pointer;
 position: absolute;
 top: 35px; 
@@ -64,13 +64,12 @@ left: 650px;
 }
 
 #moon {
-
-	 max-width: 100px;
-    height: auto;
-   
-
+    max-width: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 70px; 
+    left: 150px;  
 }
-
 
 
 
