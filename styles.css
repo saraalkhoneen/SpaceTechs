@@ -72,34 +72,34 @@ left: 650px;
 
 /* Media query for smaller screens */
 @media only screen and (max-width: 768px) {
-
-  header {
-    display: block;
-    text-align: center;
-  }
-
-  .logo img {
-    display: block;
-    margin: 0 auto;
-  }
-
-	#moon {
-     display: block;
-    margin: 0 auto;
-  
+   header {
+        flex-direction: column; 
+        align-items: center; 
     }
+
+    .logo {
+        margin-bottom: 20px; 
+    }
+
+    .logo img {
+        max-width: 80px; 
+    }
+
+    nav ul li {
+        display: block; 
+        margin-right: 0;
+        margin-bottom: 10px; 
+    }
+
+    #moon {
+        max-width: 20px; /* Adjust the size of the moon icon */
+    }
+
 
   .logo h1 {
     display: none;
   }
 
-  nav ul {
-    flex-direction: column;
-  }
-
-  nav li {
-    margin-bottom: 10px;
-  }
 
   
   main {
