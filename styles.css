@@ -63,13 +63,6 @@ left: 650px;
     margin-right: 10px;
 }
 
-#moon {
-    max-width: 30px;
-    cursor: pointer;
-    position: absolute;
-    top: 70px; 
-    left: 150px;  
-}
 
 
 
@@ -86,8 +79,12 @@ left: 650px;
     margin: 0 auto;
   }
 
-#moon {
-display: block;
+  #moon {
+    max-width: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 150px; 
+    left: 70px;  
 }
 
 
