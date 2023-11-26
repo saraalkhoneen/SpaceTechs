@@ -69,54 +69,57 @@ left: 650px;
 }
 
 
-@media only screen and (max-width: 600px) {
-    /* Adjustments for smaller screens */
-    .logo {
-        text-align: center;
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+  /* Adjustments for the header */
+  header {
+    display: block;
+    text-align: center;
+  }
+
+  .logo img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .logo h1 {
+    display: none;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    margin-bottom: 10px;
+  }
+
+  /* Adjustments for the main content */
+  main {
+    padding: 10px;
+  }
+  
+    .HPcourses,
+    .reviews {
+        justify-content: center;
     }
 
-    nav ul {
-        flex-direction: column;
+    .course,
+    .review {
+        width: calc(100% - 20px);
     }
+	
+	 
+  footer {
+    text-align: center;
+  }
 
-    nav img {
-        display: none;
-    }
-
-    /* Adjust styles for courses section */
-    .HPcourses {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    .course {
-        margin-bottom: 20px;
-    }
+  .footer-content {
+    margin-top: 20px;
+  }
 }
-
-/* Add styles for medium-sized screens */
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-    /* Adjustments for medium-sized screens */
-    .logo {
-        text-align: center;
-    }
-
-    nav ul {
-        flex-direction: row;
-    }
-
-    nav img {
-        display: block;
-    }
-
-    /* Adjust styles for courses section */
-    .HPcourses {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
-}
-
+  
 
 
 
