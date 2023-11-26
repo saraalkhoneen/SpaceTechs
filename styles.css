@@ -89,9 +89,7 @@ left: 650px;
     margin: 0 auto;
   }
 
-  .logo h1 {
-    display: none;
-  }
+
 
   nav ul {
     flex-direction: column;
