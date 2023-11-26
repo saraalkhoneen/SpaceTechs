@@ -84,7 +84,7 @@ left: 650px;
     text-align: center;
   }
 
-  .logo img {
+  #logopic {
     display: block;
     margin: 0 auto;
   }
