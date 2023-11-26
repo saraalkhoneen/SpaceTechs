@@ -23,8 +23,6 @@ header {
 
 #moon {
    max-width: 30px;
-    height: auto; 
-
 cursor: pointer;
 position: absolute;
 top: 35px; 
@@ -69,7 +67,7 @@ left: 650px;
 
 	 max-width: 100px;
     height: auto;
-    margin-left: 10px;
+   
 
 }
 
@@ -89,6 +87,9 @@ left: 650px;
     margin: 0 auto;
   }
 
+#moon {
+display: block;
+}
 
 
   nav ul {
