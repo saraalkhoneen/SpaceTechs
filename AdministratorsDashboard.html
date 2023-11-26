@@ -23,6 +23,7 @@
           
     </div>
 
+
     <nav>
         <ul>
             <li><a href="ParentsDashboard.html" title="Manage your astronauts" accesskey="1">Parent's Dashboard</a></li>
@@ -30,27 +31,51 @@
             <li><a href="coursesPage.html" title="Check our latest courses!" accesskey="3">Courses</a></li>
             <li><a href="Tutors.html" title="Meet our amazing tutors!" accesskey="4">Tutors</a></li>
         </ul>
-
-    </nav>
+    </nav> 
 
  </header>
-
-
 
 
 
 <!-- Breadcrumbs -->
 <nav class="breadcrumbs">
             <ul>
-                <li><a href="homepage.html">Home</a> </li>
+                <li><a href="home.html">Home</a> </li>
                 <li><a href="AdministratorsDashboard.html">Administrator Dashboard</a> </li>
             </ul>
 </nav>
 
 
+<hr>
+
+
 <main> 
 
-<hr>
+
+<div id="dateAndDay"></div> <!-- this is where the date range will be displayed -->
+
+<div id="dateAndDay"></div> <!-- this is where the starting Sunday date will be displayed -->
+
+<script>
+    const dateAndDayElement = document.getElementById("dateAndDay");
+    const currentDate = new Date(); // get the current date
+
+    const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+    const currentDayOfWeek = currentDate.getDay(); // get the current day of the week (0-6)
+    const daysSinceLastSunday = currentDayOfWeek === 0 ? 0 : currentDayOfWeek; // calculate days since last Sunday
+
+    const lastSundayDate = new Date(currentDate); // create a copy of the current date
+    lastSundayDate.setDate(currentDate.getDate() - daysSinceLastSunday); // set the date to the last Sunday
+
+    const lastSundayDayOfMonth = lastSundayDate.getDate(); // get the day of the month for the last Sunday
+    const lastSundayMonth = lastSundayDate.toLocaleString('default', { month: 'long' }); // get the month in full text for the last Sunday
+
+    dateAndDayElement.innerHTML = "<h2 style='color: navy; font-weight: normal; font-size: 1.5em;'> Welcome To Your Dashboard <br> This week starts on " + daysOfWeek[0] + ", " + lastSundayMonth + " " + lastSundayDayOfMonth + "th</h2>";
+</script>
+
+<br>
+
 
 <!-- SpaceTechs tutors here -->
 
@@ -66,8 +91,8 @@
                    <dt> <h4><a href="SchedulePages/DHessahSchedule.html" title = "Check Dr. Hessah schedule" >Hessah Alsaaran</a></h4>
                     <p> Currently teachs:  </p> </dt>
                         
-                      <dd>  <p> Digital Art and Animation </p> 
-                       <br> <p>    Web Development </p> </dd>
+                      <dd>  Digital Art and Animation 
+                       <br>    Web Development  </dd>
                        
                    
 				   
@@ -102,7 +127,7 @@
  <dl class="box style-4">
                    
                   <dt>  <h4><a href="SchedulePages/DAbeerSchedule.html" title = "Check Ms. Abeer schedule">Abeer Aldrees</a></h4>
-                    <p> Currently teachs:  </p> <dt>
+                    <p> Currently teachs:  </p> </dt>
                         
                             <dd>Creative Coding</dd>
                        
@@ -142,16 +167,10 @@
                  <dt>   <h4><a href="SchedulePages/DAliaSchedule.html" title = "Check Dr. Alia schedule">Alia Alabdulkareem</a></h4>
                     <p> Currently teachs:  </p> </dt>
                         
-                            <dd>Music Coding</dd>
-                            
-                       
-                  
-                    
+                           <dd>Music Coding</dd>                           
+                                   
                 </dl>
- 
 </ul>
-
-
 
 </section>
 
@@ -171,13 +190,13 @@
 indicate the actual number of children but the number of styles we are choosing from -->
 
 <li class="student style-1"> 
-<img src="icons/girl1.png" alt="Parent icon" height="40" width="50">
+<img src="icons/girl1.png" alt="Student" height="40" width="50">
 <br>
 Omaimah Attowaim
 </li>
 
 <li class="student style-2"> 
-<img src="icons/girl1.png" alt="Parent icon" height="40" width="50">
+<img src="icons/girl1.png" alt="Student" height="40" width="50">
 <br>
 Sara Alkhoneen
 </li>
@@ -189,107 +208,107 @@ Fahad Ibrahim
 </li>
 
 <li class="student style-4"> 
-<img src="icons/girl1.png" alt="Parent icon" height="40" width="50">
+<img src="icons/girl1.png" alt="Student" height="40" width="50">
 <br> 
 Hend Alghamdi
 </li>
 
 <li class="student style-5"> 
-<img src="icons/girl1.png" alt="Parent icon" height="40" width="50">
+<img src="icons/girl1.png" alt="Student" height="40" width="50">
 <br> 
 Jory Alharbi
 </li>
 
 <li class="student style-6">
-<img src="icons/boy1.png" alt="Parent icon" height="40" width="40">
+<img src="icons/boy1.png" alt="Student" height="40" width="40">
 <br> 
 Mohammed Tariq
 </li>
 
 <li class="student style-1"> 
-<img src="icons/girl1.png" alt="Parent icon" height="40" width="50">
+<img src="icons/girl1.png" alt="Student" height="40" width="50">
 <br> 
 Anwar Saud
 </li>
 
 
 <li class="student style-2"> 
-<img src="icons/boy1.png" alt="Parent icon" height="40" width="40">
+<img src="icons/boy1.png" alt="Student" height="40" width="40">
 <br>
 Badr Khalid
 </li>
 
 
 <li class="student style-3">  
-<img src="icons/boy1.png" alt="Parent icon" height="40" width="40">
+<img src="icons/boy1.png" alt="Student" height="40" width="40">
 <br>
 Abdullah Khalid
 </li>
 
 <li class="student style-4"> 
-<img src="icons/girl1.png" alt="Parent icon" height="40" width="50">
+<img src="icons/girl1.png" alt="Student" height="40" width="50">
 <br>
 Sarah Turki
 </li>
 
 
 <li class="student style-5"> 
-<img src="icons/girl1.png" alt="Parent icon" height="40" width="50">
+<img src="icons/girl1.png" alt="Student" height="40" width="50">
 <br>
 Reem Faisal
 </li>
 
 <li class="student style-6">  
-<img src="icons/girl1.png" alt="Parent icon" height="40" width="50">
+<img src="icons/girl1.png" alt="Student" height="40" width="50">
 <br>
 Lama Alarfaj
 </li>
 
 
 <li class="student style-1">  
-<img src="icons/boy1.png" alt="Parent icon" height="40" width="40">
+<img src="icons/boy1.png" alt="Student" height="40" width="40">
 <br>
 Abdulrhman Mohammed
 </li>
 
 <li class="student style-2">  
-<img src="icons/girl1.png" alt="Parent icon" height="40" width="50">
+<img src="icons/girl1.png" alt="Student" height="40" width="50">
 <br>
 Basmah Mohammed
 </li>
 
 <li class="student style-3">  
-<img src="icons/boy1.png" alt="Parent icon" height="40" width="40">
+<img src="icons/boy1.png" alt="Student" height="40" width="40">
 <br>
 Faris Omar
 </li>
 
 <li class="student style-4"> 
-<img src="icons/boy1.png" alt="Parent icon" height="40" width="40">
+<img src="icons/boy1.png" alt="Student" height="40" width="40">
 <br>
 Faisal Omar 
 </li>
 
 <li class="student style-5">
-<img src="icons/girl1.png" alt="Parent icon" height="40" width="50">
+<img src="icons/girl1.png" alt="Student" height="40" width="50">
 <br> 
 Dalia Abdullah
 </li>
 
 <li class="student style-6">
-<img src="icons/girl1.png" alt="Parent icon" height="40" width="50">
+<img src="icons/girl1.png" alt="Student" height="40" width="50">
 <br>
 Joory Khalid
 </li>
 
 <li class="student style-1">
-<img src="icons/girl1.png" alt="Parent icon" height="40" width="50">
+<img src="icons/girl1.png" alt="Student" height="40" width="50">
 <br>
 Leena Mohammed
 </li>
 
 <li class="student style-2">
-<img src="icons/girl1.png" alt="Parent icon" height="40" width="50">
+<img src="icons/girl1.png" alt="Student" height="40" width="50">
 <br>
 Manar Saqr 
 </li>
@@ -306,9 +325,6 @@ Manar Saqr
 
 <section class ="ADcourses">
 
-
-
-<section class="tutors">  <!-- Tutors here -->
     
 	<ul class = "scroll-menu" >
 	
@@ -318,15 +334,12 @@ Manar Saqr
                 <dl class="box style-1">
                     
                   <dt>   <h4>Web Desing With <br> Dr. Hessah Alsaaran </h4>
-                    <p> Kids registered in this course:  </p> </dt>
+                    <p> Students registered in this course:  </p> </dt>
                       
                             <dd>Omaimah Attowaim <br>
                             Sara Alkhoneen<br>
 						    Hend Alghamdi <br>
-                            Jory Alharbi</dd>
-							
-							
-                       
+                            Jory Alharbi</dd>    
                    
                   
                 </dl>
@@ -336,16 +349,22 @@ Manar Saqr
                 <dl class="box style-2">
                    
                   <dt>  <h4>3D Art Adventure With <br> Ms. Malak Bagais</h4>
-                    <p> Kids registered in this course:  </p> </dt>
+                    <p> Students registered in this course:  </p> </dt>
                         
                             <dd>Leena Mohammed<br>
 							    Lama Alarfaj<br>
-							   Anwar Saud<br>
-						        Faisal Omar<br>
+							   Anwar Saud<br>  
+							   Faisal Omar <br>
 								Badr Khalid<br>
-								 <a class="seeMore" title="See the whole list">See more</a></dd>  <!-- WITHOUT href SO WE HAVE AN INACTIVE LINK -->
-                        
-                    
+								
+							    <div class="additional-names" style="display: none;">
+							  
+							   Sara Alkhoneen <br>
+							   
+							  </div> 
+							  
+					   	<button class="seeMore" title="See the whole list" style = "color:lavender" >See more</button> </dd>					       
+         
                     
                 </dl>
 				
@@ -355,7 +374,7 @@ Manar Saqr
  <dl class="box style-3">
                    
                <dt>     <h4> Intro To Robotics With <br>  Ms. Sharefah Alghamdi</h4>
-                    <p> Kids registered in this course:  </p> </dt>
+                    <p> Students registered in this course:  </p> </dt>
                         
                             <dd> Reem Faisal <br>
 							  Dalia Abdullah <br>
@@ -371,7 +390,7 @@ Manar Saqr
  <dl class="box style-4">
                    
                     <dt> <h4>Creative Coding With <br>  Ms. Abeer Aldrees </h4>
-                    <p> Kids registered in this course:  </p> </dt>
+                    <p> Students registered in this course:  </p> </dt>
                         
                             <dd>Joory Khalid<br>
 	                        Omaimah Attowaim</dd>
@@ -386,14 +405,24 @@ Manar Saqr
  <dl class="box style-5">
                    
                    <dt> <h4>Digital Art and Animation With <br>  Dr. Hessah Alsaaran</h4>
-                    <p> Kids registered in this course:  </p> </dt>
+                    <p> Students registered in this course:  </p> </dt>
                         <ul>
                             <dd>Lama Alarfaj<br>
 					       Abdullah Khalid<br>
 							 Manar Saqr <br>
 							 Mohammed Tariq <br>
 							 Fahad Ibrahim <br>
-                            <a class="seeMore" title="See the whole list">See more</a></dd>  <!-- WITHOUT href SO WE HAVE AN INACTIVE LINK -->
+							 
+							  <div class="additional-names" style="display: none;">
+							  
+							    Dalia Abdullah <br>
+								Joory Khalid<br>
+								Leena Mohammed<br>
+								  Faisal Omar<br>
+							  </div> 
+							  
+                           	<button class="seeMore" title="See the whole list" style = "color:lavender" >See more</button></dd>
+							
                         
                     
                     
@@ -403,17 +432,13 @@ Manar Saqr
  <dl class="box style-6">
                    
                  <dt>   <h4>Data Science With Python With <br> Dr. Luluah Aldhubayi</h4>
-                    <p> Kids registered in this course:  </p> </dt>
+                    <p> Students registered in this course:  </p> </dt>
                         
                             <dd>Lama Alarfaj<br>
 							 Hend Alghamdi <br>
 							 Sarah Turki <br>
 							 Reem Faisal <br>
-							 Manar Saqr </dd>
-                            
-                       
-                    
-                    
+							 Manar Saqr </dd>                                                                                        
                 </dl>
 				
 		
@@ -421,38 +446,41 @@ Manar Saqr
 <dl class="box style-1">
                    
                   <dt>  <h4>Intro To Game Development With <br> Dr. Nawal Almutairi </h4>
-                    <p> Kids registered in this course:  </p> </dt>
+                    <p> Students registered in this course:  </p> </dt>
                      
                             <dd>Faris Omar<br>
-                           Abdulrhman Mohammed</dd>
-                       
-                   
-                    
+                           Abdulrhman Mohammed</dd>                                                             
                 </dl>
 
 <!-- Eighth course -->
  <dl class="box style-2">
                    
                 <dt>    <h4>Music Coding With <br> Dr. Alia Alabdulkareem</h4>
-                    <p> Kids registered in this course:  </p> </dt>
+                    <p> Students registered in this course:  </p> </dt>
                         
                             <dd>Anwar Saud<br>
                            Sara Alkhoneen<br>
 						 Badr Mohammed <br>
 							 Leena Mohammed <br>
-							Jory Alharbi <br>
-							<a class="seeMore" title="See the whole list">See more</a></dd>  <!-- WITHOUT href SO WE HAVE AN INACTIVE LINK -->
+							Jory Alharbi <br> 
 							
-                        
-                   
+							  <div class="additional-names" style="display: none;">
+							  
+							    Abdullah Khalid <br>
+								Faris Omar<br>
+								Sarah Turki<br>
+								
+							  </div> 
+							  
+							<button class="seeMore" title="See the whole list" style = "color:lavender" >See more</button> </dd>
                     
                 </dl>
-				
 	</ul>
 
 </section>
 
 </main>
+
 <footer>
         <div class="footer-content">
             <p>&copy; 2023 Space Techs</p>
@@ -466,6 +494,25 @@ Manar Saqr
 			
         </div>
     </footer>
+	
+<script>
+
+const seeMoreButtons = document.querySelectorAll('.seeMore');
+
+seeMoreButtons.forEach(button => {
+    button.addEventListener('click', function () {
+        const namesContainer = this.previousElementSibling;
+        if (namesContainer.style.display === 'none' || namesContainer.style.display === '') {
+            namesContainer.style.display = 'block';
+            this.textContent = 'See less';
+        } else {
+            namesContainer.style.display = 'none';
+            this.textContent = 'See more';
+        }
+    });
+}); 
+
+</script>
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {

@@ -22,13 +22,13 @@ header {
 }
 
 #moon {
-
-width: 30px;
+max-width: 30px;
 cursor: pointer;
 position: absolute;
 top: 35px; 
 left: 650px; 
 }
+
 
 :root {
 
@@ -57,11 +57,75 @@ left: 650px;
     align-items: center;
 }
 
-.logo img {
+#logopic {
     max-width: 100px;
     height: auto;
     margin-right: 10px;
 }
+
+
+
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+  /* Adjustments for the header */
+  header {
+    display: block;
+    text-align: center;
+  }
+
+  header img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  #moon {
+    max-width: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 150px; 
+    left: 70px;  
+}
+
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    margin-bottom: 10px;
+  }
+
+  /* Adjustments for the main content */
+  main {
+    padding: 10px;
+  }
+  
+    .HPcourses,
+    .reviews {
+        justify-content: center;
+    }
+
+    .course,
+    .review {
+        width: calc(100% - 20px);
+    }
+	
+	 
+  footer {
+    text-align: center;
+  }
+
+  .footer-content {
+    margin-top: 20px;
+  }
+}
+  
+  
+
+
+
+
 
 nav ul {
     list-style: none;
@@ -1249,3 +1313,21 @@ table.Sharefah td[data-cell="Saturday-class"] {
 }
 
 /****************end of tutor and schedule*************/
+
+.HPcourses, .reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.course,
+.review {
+    width: calc(50% - 20px);
+    margin: 10px;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
