@@ -1325,4 +1325,22 @@ table.Sharefah td[data-cell="Saturday-class"] {
     box-sizing: border-box;
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px; /* Adjust as needed */
+}
+
+nav img {
+    width: 20px; /* Adjust the width of the moon icon */
+    height: auto;
+    margin-top: 10px; /* Adjust as needed */
+}
