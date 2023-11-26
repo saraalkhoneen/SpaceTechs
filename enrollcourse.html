@@ -8,13 +8,12 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  
+
 <header> <!-- logo and navigation bar -->
 
     <div class="logo">
 	<a href="home.html" title= "Go to the homepage"><img src="logo.png" alt="logo" height="30" width="156" ></a>
 	<h1> SpaceTechs </h1>
-          
     </div>
 
     <nav>
@@ -26,156 +25,400 @@
         </ul>
     </nav>
 
- </header>
+</header>
 
-    
     <main class="course-enrollment">
         <nav class="breadcrumbs">
             <ul>
-                <li><a href="homepage.html">Home</a> &gt; </li>
+                <li><a href="home.html">Home</a> &gt; </li>
                 <li><a href="ParentsDashboard.html">Courses</a> &gt; </li>
                 <li>Enroll course</li>
             </ul>
-            </nav>
-        <h2>Course Enrollment</h2>
-        <section class="student-name">
-            <label for="studentName">Student Name:</label>
-            <select id="studentName" name="studentName">
-                <option value="none">None</option>
-                <option value="name1">Sara</option>
-                <option value="name2">Abdullah</option>
-                <option value="name3">Badr</option>
-                <option value="name4">Jory</option>
-                <option value="name5">Omaimah</option>
-                <option value="name6">Mohhamed</option>
-            </select>
-        </section>
+        </nav>
+    
+        <main>
+            <div class="form-container">
+                <div class="form-box">
+                    <label for="kid-names">Choose your kid name:</label>
+                    <select name="kid-names" id="kid-names">
+                        <option value="none">None</option>
+                        <option value="name1">Sara</option>
+                        <option value="name2">Abdullah</option>
+                        <option value="name3">Badr</option>
+                        <option value="name4">Jory</option>
+                        <option value="name5">Omaimah</option>
+                        <option value="name6">Mohhamed</option>
+    
+                    </select>
+                </div>
+    
+                <div class="form-box">
+                    <h3>Select Your Courses</h3>    
+                    <label for="tutor-filter">Filter by tutor:</label>
+                    <select id="tutor-filter" onchange="filterCoursesByTutor()">
+                        <option value="All Prerequisite">Show All</option>
+                        <option value="D.Hessah">D.Hessah</option>
+                        <option value="D.Malak">D.Malak</option>
+                        <option value="D.Sharefah">D.Sharefah</option>
+                        <option value="D.Abeer">D.Abeer</option>
+                        <option value="D.Luluah">D.Luluah</option>
+                        <option value="D.Nawal">D.Nawal</option>
+                        <option value="D.Alia">D.Alia</option>
+                    </select>
+                    <label for="prerequisite-filter">Filter by prerequisites:</label>
+
+                    
+                    <select id="prerequisite-filter" onchange="filterCoursesByPrerequisite()">    
+                        <option value="All Prerequisite">All Prerequisite</option>
+                        <option>Java</option>
+                        <option>Python</option>
+                        <option>Scratch</option>
+                        <option>C#</option>
+                    </select>
+
+
+    
+                    <form id="courses-form">
+
+                        <div class="course style-1">
+                            <img src="imgCourses/AI.webp" alt="Course 1">
+                            <div class="course-details">
+                                <label for="course1">
+                                    <input type="checkbox" id="course1" name="courses[]" value="Course 1"> Intro to Robotics
+                                </label>
+                            </div>
+                        </div>
+                    
+                        <div class="course style-2">
+                            <img src="imgCourses/creativeCourse.jpg" alt="Course 2">
+                            <div class="course-details">
+                                <label for="course2">
+                                    <input type="checkbox" id="course2" name="courses[]" value="Course 2"> Creative Coding
+                                </label>
+                            </div>
+                        </div>
+                    
+                        <div class="course style-3">
+                            <img src="imgCourses/webCourse.jpeg" alt="Course 3">
+                            <div class="course-details">
+                                <label for="course3">
+                                    <input type="checkbox" id="course3" name="courses[]" value="Course 3"> Web Design
+                                </label>
+                            </div>
+                        </div>
+                    
+                        <div class="course style-4">
+                            <img src="imgCourses/scratch1.png" alt="Course 4">
+                            <div class="course-details">
+                                <label for="course4">
+                                    <input type="checkbox" id="course4" name="courses[]" value="Course 4"> 3D Art Adventures
+                                </label>
+                            </div>
+                        </div>
+                    
+                        <div class="course style-5">
+                            <img src="imgCourses/Digital-Art.jpg" alt="Course 5">
+                            <div class="course-details">
+                                <label for="course5">
+                                    <input type="checkbox" id="course5" name="courses[]" value="Course 5"> Digital Art and Animation
+                                </label>
+                            </div>
+                        </div>
+                    
+                        <div class="course style-6">
+                            <img src="imgCourses/pyhtonCourse2.png" alt="Course 6">
+                            <div class="course-details">
+                                <label for="course6">
+                                    <input type="checkbox" id="course6" name="courses[]" value="Course 6"> Intro to game development
+                                </label>
+                            </div>
+                        </div>
+                    
+                        <div class="course style-1">
+                            <img src="imgCourses/pyhtonCourse2.png" alt="Course 7">
+                            <div class="course-details">
+                                <label for="course7">
+                                    <input type="checkbox" id="course7" name="courses[]" value="Course 7"> Music Coding
+                                </label>
+                            </div>
+                        </div>
+                    
+                        <div class="course style-2">
+                            <img src="imgCourses/pyhtonCourse2.png" alt="Course 8">
+                            <div class="course-details">
+                                <label for="course8">
+                                    <input type="checkbox" id="course8" name="courses[]" value="Course 8"> Data Science with Python
+                                </label>
+                            </div>
+                        </div>
+                    
+                    </form>
+                    <input type="submit" id="submit-btn" value="Submit">
+                    <div id="enrolled-courses-info"></div>
+                    
+        </main>
+    
+        <footer>
+            <h3>Contact us </h3>
+            <p>Email: <a href="mailto:CodingSafari@gmail.com">CodingSafari@gmail.com</a></p>
+            <p>Phone: 0553892789</p>
+            <p>&copy; 2023 CodingSafari, all rights reserved.</p>
+        </footer>
+
+    
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var coursesForm = document.getElementById("courses-form");
+                var kidNamesDropdown = document.getElementById("kid-names");
+                var submitButton = document.getElementById("submit-btn");
+        
+                var kidsInfo = JSON.parse(localStorage.getItem("kidsInfo"));
+        
+                if (kidsInfo) {
+                    for (var formId in kidsInfo) {
+                        var namesArray = kidsInfo[formId];
+        
+                        namesArray.forEach(function (childName) {
+                            var option = document.createElement("option");
+                            option.value = childName;
+                            option.text = childName;
+                            kidNamesDropdown.appendChild(option);
+                        });
+                    }
+                }
+        
+                var courses = [
+                  {
+                      name: "Intro to Robotics",
+                      tutor: "D.Sharefah",
+                      prerequisites: ["Python"]
+                  },
+                  {
+                      name: "Creative Coding",
+                      tutor: "D.Abeer",
+                      prerequisites: ["Java"]
+                  },
+                  {
+                      name: "Web Design",
+                      tutor: "D.Hessah",
+                      prerequisites: ["HTML"]
+                  },
+                  {
+                      name: "3D Art Adventures",
+                      tutor: "D.Malak",
+                      prerequisites: ["Python"]
+                  },
+                  {
+                      name: "Digital Art and Animation",
+                      tutor: "D.Hessah",
+                      prerequisites: ["Java"]
+                  },
+                  {
+                      name: "Intro to game development",
+                      tutor: "D.Nawal",
+                      prerequisites: ["C#"]
+                  },
+                  {
+                      name: "Music Coding",
+                      tutor: "D.Alia",
+                      prerequisites: ["Python"]
+                  },
+                  {
+                      name: "Data Science with Python",
+                      tutor: "D.Luluah",
+                      prerequisites: ["Python"]
+                  }
+              ];
+          
+        
+                function fillTutorFilterOptions() {
+                    var tutorFilter = document.getElementById("tutor-filter");
+        
+                    var uniqueTutors = Array.from(new Set(courses.map(course => course.tutor)));
+        
+                    uniqueTutors.forEach(function (tutor) {
+                        var option = document.createElement("option");
+                        option.value = tutor;
+                        option.text = tutor;
+                        tutorFilter.appendChild(option);
+                    });
+                }
+        
+                function fillPrerequisiteFilterOptions() {
+                    var prerequisiteFilter = document.getElementById("prerequisite-filter");
+        
+                    var prerequisites = [].concat.apply([], courses.map(course => course.prerequisites));
+                    var uniquePrerequisites = Array.from(new Set(prerequisites));
+        
+                    uniquePrerequisites.forEach(function (prerequisite) {
+                        var option = document.createElement("option");
+                        option.value = prerequisite;
+                        option.text = prerequisite;
+                        prerequisiteFilter.appendChild(option);
+                    });
+                }
+        
+                fillTutorFilterOptions();
+                fillPrerequisiteFilterOptions();
+        
+                function filterCoursesByTutor(selectedTutor) {
+                    var filteredCourses = courses.filter(function (course) {
+                        return course.tutor === selectedTutor;
+                    });
+        
+                    displayFilteredCourses(filteredCourses);
+                }
+        
+                // Function to filter courses based on prerequisite
+                function filterCoursesByPrerequisite(selectedPrerequisite) {
+                    var filteredCourses;
+
+                    if (selectedPrerequisite === "All Prerequisites") {
+                        // If "All prerequisites" is selected, show all courses
+                        filteredCourses = courses;
+                    } else {
+                        // Filter courses based on the selected prerequisite
+                        filteredCourses = courses.filter(function (course) {
+                            return course.prerequisites.includes(selectedPrerequisite);
+                        });
+                    }
+
+                    displayFilteredCourses(filteredCourses);
+                }
+
+        
+                // Function to display filtered courses in the form
+                function displayFilteredCourses(filteredCourses) {
+                    var coursesForm = document.getElementById("courses-form");
+
+                    // Clear existing courses before displaying filtered ones
+                    coursesForm.innerHTML = "";
+
+                    // Iterate through the filtered courses
+                    filteredCourses.forEach(function (course) {
+                        var courseDiv = document.createElement("div");
+                        courseDiv.className = "course"; // Use a class for styling
+
+                        var checkboxInput = document.createElement("input");
+                        checkboxInput.type = "checkbox";
+                        checkboxInput.id = course.name;
+                        checkboxInput.name = "courses[]";
+                        checkboxInput.value = course.name;
+
+                        var checkboxLabel = document.createElement("label");
+                        checkboxLabel.htmlFor = course.name;
+                        checkboxLabel.textContent = course.name;
+
+                        // Append the checkbox and label to the courseDiv
+                        courseDiv.appendChild(checkboxInput);
+                        courseDiv.appendChild(checkboxLabel);
+
+                        // Append the courseDiv to the coursesForm
+                        coursesForm.appendChild(courseDiv);
+                    });
+                }
+
+        
+        
+        
+                document.getElementById("tutor-filter").addEventListener("change", function () {
+                    var selectedTutor = this.value;
+                    filterCoursesByTutor(selectedTutor);
+                });
+        
+                document.getElementById("prerequisite-filter").addEventListener("change", function () {
+                    var selectedPrerequisite = this.value;
+                    filterCoursesByPrerequisite(selectedPrerequisite);
+                });
+        
+                function validateForm() {
+                    var selectedChild = kidNamesDropdown.value;
+        
+                    if (!selectedChild || selectedChild === "choose a kid") {
+                        alert("Please choose a child.");
+                        return false;
+                    }
+        
+                    var selectedCourses = document.querySelectorAll('input[name="courses[]"]:checked');
+                    if (selectedCourses.length === 0) {
+                        alert("Please select at least one course.");
+                        return false;
+                    }
+        
+                    return true;
+                }
+        
+                submitButton.addEventListener("click", function (event) {
+                    event.preventDefault();
+        
+                    var isValid = validateForm();
+        
+                    if (isValid) {
+                        var selectedChild = kidNamesDropdown.value;
+                        var selectedCourses = [];
+                        var selectedCheckboxes = document.querySelectorAll('input[name="courses[]"]:checked');
+        
+                        selectedCheckboxes.forEach(function (checkbox) {
+                            selectedCourses.push(checkbox.value);
+                        });
+        
+                        displayEnrolledCourses(selectedChild, selectedCourses);
+        
+                        // Save enrollment information to localStorage
+                        saveEnrollmentInfo(selectedChild, selectedCourses);
+        
+                        coursesForm.reset();
+                    }
+                });
+        
+                function getTutorForCourse(courseName) {
+                    var course = courses.find(course => course.name === courseName);
+                    return course ? course.tutor : "Not available";
+                }
+        
+                function displayEnrolledCourses(selectedChild, selectedCourses) {
+                    var displayArea = document.getElementById("enrolled-courses-info");
+        
+                    displayArea.innerHTML = "";
+        
+                    var childHeading = document.createElement("h2");
+                    childHeading.textContent = "Enrolled Child: " + selectedChild;
+                    displayArea.appendChild(childHeading);
+        
+                    if (selectedCourses.length > 0) {
+                        var coursesHeading = document.createElement("h3");
+                        coursesHeading.textContent = "Enrolled Courses:";
+                        displayArea.appendChild(coursesHeading);
+        
+                        var coursesList = document.createElement("ul");
+        
+                        selectedCourses.forEach(function (courseName) {
+                            var courseItem = document.createElement("li");
+                            courseItem.textContent = courseName + " - Tutor: " + getTutorForCourse(courseName);
+                            coursesList.appendChild(courseItem);
+                        });
+        
+                        displayArea.appendChild(coursesList);
+                    }
+                }
+        
+                function saveEnrollmentInfo(selectedChild, selectedCourses) {
+                    // Get existing enrollment information from localStorage or initialize an empty array
+                    var enrollmentInfo = JSON.parse(localStorage.getItem("enrollmentInfo")) || [];
+        
+                    // Add the current enrollment to the array
+                    enrollmentInfo.push({
+                        child: selectedChild,
+                        courses: selectedCourses
+                    });
+        
+                    // Save the updated array back to localStorage
+                    localStorage.setItem("enrollmentInfo", JSON.stringify(enrollmentInfo));
+                }
+            });
+        </script>
         
 
-        <!-- ... (filter) ... -->
-
-<section class="filters">
-    <div class="filter">
-        <label for="prerequisite">Pre-requisite:</label>
-        <select id="prerequisite" name="prerequisite">
-            <option value="none">None</option>
-            <option value="course1">java</option>
-            <option value="course2">python</option>
-        </select>
-    </div>
-
-    <div class="filter">
-        <label for="tutor">Tutor:</label>
-        <select id="tutor" name="tutor">
-            <option value="all">All Tutors</option>
-            <option value="tutor1">Dr. lama</option>
-            <option value="tutor2">Dr. Hussah</option>
-            <option value="tutor1">Dr. Amal</option>
-            <option value="tutor2">Dr. Tariq</option>
-        </select>
-    </div>
-</section>
-
-<!-- ... (courses) ... -->
-<section class="courses">
-
-    <div class="course style-1">
-        <img src="imgCourses/AI.webp" alt="Course 1">
-        <h3>Intro to Robotics</h3>
-        <p>An engaging course that introduces children to the exciting world of robotics and helps them build their own simple robots.</p>
-        <input type="checkbox" id="course1" name="course1">
-        <label for="course1">Enroll</label>
-     </div>
-
-    <div class="course style-2">
-        <img src="imgCourses/creativeCourse.jpg" alt="Course 2">
-        <h3>Creative Coding</h3>
-        <p>This course teaches children the basics of coding in a fun and creative way, allowing them to develop simple programs and interactive games..</p>
-        <input type="checkbox" id="course2" name="course2">
-        <label for="course2">Enroll</label>
-    </div>
-
-    <div class="course style-3">
-        <img src="imgCourses/webCourse.jpeg" alt="Course 3">
-        <h3>Web Design for Kids</h3>
-        <p>An introductory course that teaches children the fundamentals of web design, allowing them to create their own web pages.</p>
-        <input type="checkbox" id="course3" name="course3">
-        <label for="course3">Enroll</label>
-    </div>
-
-    <div class="course style-4">
-        <img src="imgCourses/scratch1.png" alt="Course 4">
-        <h3>Coding Adventures with Scratch</h3>
-        <p>Unleash your child's creativity with our Scratch Programming Course, where they'll turn ideas into interactive projects and games. Let the coding adventure begin!</p>
-        <input type="checkbox" id="course4" name="course4">
-        <label for="course4">Enroll</label>
-    </div>
-
-    <div class="course style-5">
-        <img src="imgCourses/Digital-Art.jpg" alt="Course 5">
-        <h3>Digital Art and Animation</h3>
-        <p>Children can explore their artistic side with this course, learning how to create digital art and simple animations.</p>
-        <input type="checkbox" id="course5" name="course5">
-        <label for="course5">Enroll</label>
-    </div>
-
-    <div class="course style-6">
-        <img src="imgCourses/pyhtonCourse2.png" alt="Course 6">
-        <h3>Data Science with Python </h3>
-        <p>This course introduces children to the world of game development, where they can design and build their own simple games</p>
-        <input type="checkbox" id="course6" name="course6">
-        <label for="course6">Enroll</label>
-    </div>
-</section>
-
-<!-- ... (end of courses) ... -->
-
-
-        <button type="submit" id="enrollButton">Enroll</button>
-    </main>
-
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2023 Space Techs</p>
-            <a href="mailto:SpaceTechs@gmail.com" title= "Click to send an email" class="contact-link">
-                <i class="fa fa-envelope"></i> Email Us
-				(SpaceTechs@gmail.com)
-				<br>
-            </a>
-		    <a href="" title= "Follow us on twitter!" class="fa fa-twitter contact-link"></a>
-			<a href="" title= "Follow us on instagram!" class="fa fa-instagram contact-link" ></a>
-			
-        </div>
-    </footer>
-    
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var icon = document.getElementById("moon");
-    
-            // Function to set the theme and icon
-            function setThemeAndIcon() {
-                if (document.body.classList.contains("dark-theme")) {
-                    icon.src = "icons/sun.png";
-                    localStorage.setItem("theme", "dark");
-                } else {
-                    icon.src = "icons/moon.png";
-                    localStorage.setItem("theme", "light");
-                }
-            }
-    
-            // Check if theme preference is stored in localStorage
-            var savedTheme = localStorage.getItem("theme");
-            if (savedTheme) {
-                document.body.classList.add(savedTheme + "-theme");
-                setThemeAndIcon();
-            }
-    
-            // Toggle theme and update icon on click
-            icon.onclick = function() {
-                document.body.classList.toggle("dark-theme");
-                setThemeAndIcon();
-            };
-        });
-    </script>
 </body>
 </html>
