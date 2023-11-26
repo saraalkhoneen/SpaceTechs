@@ -67,6 +67,8 @@ left: 650px;
 
 
 
+
+/* Media query for smaller screens */
 @media only screen and (max-width: 768px) {
   /* Adjustments for the header */
   header {
@@ -74,25 +76,22 @@ left: 650px;
     text-align: center;
   }
 
- .logo {
-        flex-direction: column;
-        align-items: center;
-    }
+  .logo img {
+    display: block;
+    margin: 0 auto;
+  }
 
- h1 {
-        margin-bottom: 0.5em; /* Adjust margin for title */
-        padding-right: 0; /* Remove padding for moon icon */
-    }
+  .logo h1 {
+    display: none;
+  }
 
-	  #moon {
-        position: static; /* Change position to default */
-        width: 25px; /* Adjust the width of the moon icon for smaller screens */
-        margin-top: 10px; /* Add margin to space the moon icon */
-    }
-	
-    nav {
-        margin-top: 20px; /* Adjust top margin for navigation */
-    }
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    margin-bottom: 10px;
+  }
 
   /* Adjustments for the main content */
   main {
@@ -118,6 +117,7 @@ left: 650px;
     margin-top: 20px;
   }
 }
+  
   
 
 
