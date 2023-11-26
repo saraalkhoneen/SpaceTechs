@@ -115,6 +115,77 @@ left: 650px;
 }
 
 
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 390px) {
+
+  header {
+    display: block;
+    text-align: center;
+  }
+
+  .logo img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .logo h1 {
+    display: none;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    margin-bottom: 10px;
+  }
+
+  
+  main {
+    padding: 10px;
+  }
+  
+    .HPcourses,
+    .reviews {
+        justify-content: center;
+    }
+
+    .course,
+    .review {
+        width: calc(100% - 20px);
+    }
+	 
+  footer {
+    text-align: center;
+  }
+
+  .footer-content {
+    margin-top: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 nav ul {
     list-style: none;
     display: flex;
