@@ -59,7 +59,7 @@ left: 650px;
     align-items: center;
 }
 
-.logo img {
+#logopic {
     max-width: 100px;
     height: auto;
     margin-right: 10px;
