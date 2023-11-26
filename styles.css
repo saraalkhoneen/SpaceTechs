@@ -21,15 +21,6 @@ header {
     align-items: center;
 }
 
-#moon {
-   max-width: 30px;
-    height: auto; 
-
-cursor: pointer;
-position: absolute;
-top: 35px; 
-left: 650px; 
-}
 
 :root {
 
@@ -64,6 +55,15 @@ left: 650px;
     margin-right: 10px;
 }
 
+#moon {
+   max-width: 30px;
+    height: auto; 
+
+cursor: pointer;
+position: absolute;
+top: 35px; 
+left: 650px; 
+}
 
 
 
